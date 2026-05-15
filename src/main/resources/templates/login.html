@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/head :: head('Login')}"></head>
 <body>
     <div th:replace="~{fragments/navbar :: navbar}"></div>
     <h1>This is login</h1>
+    <div th:if="${registrationSuccess}" class="alert alert-success">
+        Registration successful. You can now log in.
+    </div>
+    <form th:action="@{/login}" method="post">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password">
+        </div>
+        <button type="submit">Login</button>
+        <p th:if="${param.error}">Wrong Username or Password</p>
+    </form>
 </body>
 </html>

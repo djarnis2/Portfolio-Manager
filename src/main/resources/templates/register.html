@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Register</title>
-</head>
+<head th:replace="~{fragments/head :: head('Register')}"></head>
 <body>
     <div th:replace="~{fragments/navbar :: navbar}"></div>
     <h1>Register Page</h1>
@@ -27,6 +24,13 @@
             <input type="password" th:field="*{password}">
             <p th:if="${#fields.hasErrors('password')}"
                th:errors="*{password}"
+            ></p>
+        </div>
+        <div>
+            <label for="matchingPassword">Confirm Password</label>
+            <input type="password" th:field="*{matchingPassword}">
+            <p th:if="${#fields.hasErrors('matchingPassword')}"
+               th:errors="*{matchingPassword}"
             ></p>
         </div>
         <button type="submit">Register</button>

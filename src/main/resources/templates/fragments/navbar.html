@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Navbar</title>
 </head>
 <body>
-    <nav th:fragment="navbar">
-        <a th:href="@{/}">Home</a>
-        <a th:href="@{/login}">Login</a>
-        <a th:href="@{/register}">Register</a>
-    </nav>
+<nav th:fragment="navbar" class="navbar navbar-expand-lg bg-body-tertiary px-3">
+    <a class="navbar-brand" th:href="@{/}">Portfolio Manager</a>
+
+    <div class="navbar-nav me-auto">
+        <a class="nav-link" th:href="@{/}">Home</a>
+
+        <a sec:authorize="isAnonymous()" class="nav-link" th:href="@{/login}">Login</a>
+        <a sec:authorize="isAnonymous()" class="nav-link" th:href="@{/register}">Register</a>
+    </div>
+
+    <div sec:authorize="isAuthenticated()" class="d-flex align-items-center gap-2">
+        <span class="navbar-text">
+            Logged in as <span sec:authentication="name"></span>
+        </span>
+
+        <form th:action="@{/logout}" method="post" class="m-0">
+            <button type="submit" class="btn btn-outline-secondary btn-sm">Logout</button>
+        </form>
+    </div>
+</nav>
 </body>
 </html>
