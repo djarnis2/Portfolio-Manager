@@ -1,9 +1,6 @@
 package com.lars.portfolio_manager.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
 public class Portfolio {
@@ -14,12 +11,26 @@ public class Portfolio {
 
     private String name;
 
+    @ManyToOne(optional = false)
+    private CustomUser owner;
+
     public Portfolio() {
     }
 
-    public Portfolio(Long id) {
-        this.id = id;
+    public Portfolio(String name, CustomUser owner) {
+        this.name = name;
+        this.owner = owner;
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getName() {
+        return name;
+    }
+
+    public CustomUser getOwner() {
+        return owner;
+    }
 }

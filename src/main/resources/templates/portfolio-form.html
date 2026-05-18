@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/head :: head('Portfolio Form')}"></head>
+
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div>
+  <form th:action="@{/portfolios}"
+        th:object="${portfolioForm}"
+        method="post">
+  <div>
+    <label for="name">Enter portfolio name</label>
+    <input type="text" th:field="*{name}">
+    <p th:if="${#fields.hasErrors('name')}"
+       th:errors="*{name}">
+    </p>
+  </div>
+  <button type="submit">Create Portfolio</button>
+  </form>
+</div>
+</body>
+</html>

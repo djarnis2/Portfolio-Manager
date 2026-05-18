@@ -1,0 +1,2756 @@
+[
+  {
+    "Code": "0P0001BSXT",
+    "Name": "Accunia European CLO Opportunity KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "0P0001D7HZ",
+    "Name": "Othania Invest",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "0P0001KORN",
+    "Name": "Othania Balanceret Makro",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "AAB",
+    "Name": "Aalborg Boldspilklub A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060868966"
+  },
+  {
+    "Code": "AGAT",
+    "Name": "Agat Ejendomme A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010258995"
+  },
+  {
+    "Code": "AGF-B",
+    "Name": "AGF A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010263722"
+  },
+  {
+    "Code": "AGILC",
+    "Name": "Agillic A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060955854"
+  },
+  {
+    "Code": "ALEFRM",
+    "Name": "Alefarm Brewing AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061407699"
+  },
+  {
+    "Code": "ALK-B",
+    "Name": "ALK-Abell\u00f3 A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061802139"
+  },
+  {
+    "Code": "ALMB",
+    "Name": "Alm. Brand",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015250344"
+  },
+  {
+    "Code": "ALSYDB",
+    "Name": "AL Sydbank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "AMBU-B",
+    "Name": "Ambu A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060946788"
+  },
+  {
+    "Code": "AOJ-B",
+    "Name": "Broedrene A&O Johansen A\/S Series B",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061686714"
+  },
+  {
+    "Code": "ASTK",
+    "Name": "Asetek A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "ATLA-DKK",
+    "Name": "P\/F Atlantic Petroleum",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "FO000A0DN9X4"
+  },
+  {
+    "Code": "BACTIQ",
+    "Name": "Bactiquant AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061417730"
+  },
+  {
+    "Code": "BAIDKAA",
+    "Name": "BankInvest - Danske Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAIDKAAKA",
+    "Name": "Bankinvest - Danske Aktier Akk. KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAIEMOAKA",
+    "Name": "BankInvest - Emerging Markets Obligationer Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAIEMOBA",
+    "Name": "BankInvest Hojrentelande",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0016112832"
+  },
+  {
+    "Code": "BAIEMOLVA",
+    "Name": "BankInvest - Emerging Markets Obligationer Lokalvaluta",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAIGAI",
+    "Name": "Investeringsforeningen Bankinvest - Globale Aktier Indeks Kl",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0061133709"
+  },
+  {
+    "Code": "BAIHUAA",
+    "Name": "BankInvest - H\u00f8jt Udbytte Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAIKDOBA",
+    "Name": "BankInvest Korte Danske Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0016109614"
+  },
+  {
+    "Code": "BAILDOBA",
+    "Name": "BankInvest Lange Danske Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0016109531"
+  },
+  {
+    "Code": "BAIVOIGA",
+    "Name": "BankInvest Virksomhedsobligatione",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010296813"
+  },
+  {
+    "Code": "BAIVOIGAKA",
+    "Name": "BankInvest - Virksomhedsobligationer IG Akk. KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BAVA",
+    "Name": "Bavarian Nordic",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015998017"
+  },
+  {
+    "Code": "BETCO-DKK",
+    "Name": "Better Collective A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "BIF",
+    "Name": "Broendbyernes IF Fodbold AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010247956"
+  },
+  {
+    "Code": "BIOPOR",
+    "Name": "BioPorto",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0011048619"
+  },
+  {
+    "Code": "BLIGAA",
+    "Name": "BLS Invest Globale Aktier Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "BLKDA",
+    "Name": "Bls Invest Danske Aktier Kl",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060188902"
+  },
+  {
+    "Code": "BLKGA",
+    "Name": "Bls Invest Globale Aktier Kl",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060189041"
+  },
+  {
+    "Code": "BO",
+    "Name": "Bang & Olufsen",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010218429"
+  },
+  {
+    "Code": "BOOZT-DKK",
+    "Name": "Boozt AB (publ)",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "SE0009888738"
+  },
+  {
+    "Code": "CARL-A",
+    "Name": "Carlsberg A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010181676"
+  },
+  {
+    "Code": "CARL-B",
+    "Name": "Carlsberg A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010181759"
+  },
+  {
+    "Code": "CBRAIN",
+    "Name": "cBrain A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060030286"
+  },
+  {
+    "Code": "CEMAT",
+    "Name": "Cemat A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010271584"
+  },
+  {
+    "Code": "CESSA",
+    "Name": "Cessatech A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "CHEMM",
+    "Name": "ChemoMetec A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060055861"
+  },
+  {
+    "Code": "COLO-B",
+    "Name": "Coloplast A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060448595"
+  },
+  {
+    "Code": "COLUM",
+    "Name": "Columbus A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010268366"
+  },
+  {
+    "Code": "CPHCAP-PREF32",
+    "Name": "Copenhagen Capital A\/S 40% Pfd.",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061930641"
+  },
+  {
+    "Code": "CPHCAP-ST",
+    "Name": "Copenhagen Capital A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060093607"
+  },
+  {
+    "Code": "CWIEMMKL",
+    "Name": "C WorldWide Emerging Markets KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DAB",
+    "Name": "Danske Andelskassers Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060299063"
+  },
+  {
+    "Code": "DAC",
+    "Name": "Danish Aerospace Company A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061140407"
+  },
+  {
+    "Code": "DANSKE",
+    "Name": "Danske Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010274414"
+  },
+  {
+    "Code": "DANT",
+    "Name": "Dantax",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015205637"
+  },
+  {
+    "Code": "DATA",
+    "Name": "Dataproces Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061408580"
+  },
+  {
+    "Code": "DEMANT",
+    "Name": "Demant A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060738599"
+  },
+  {
+    "Code": "DFDS",
+    "Name": "DFDS A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060655629"
+  },
+  {
+    "Code": "DJUR",
+    "Name": "Djurslands Bank",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060136273"
+  },
+  {
+    "Code": "DKIDIO",
+    "Name": "Investeringsforeningen Danske Invest - Danske Indeksobligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIDK",
+    "Name": "Danske Invest Danmark",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010252873"
+  },
+  {
+    "Code": "DKIDKA",
+    "Name": "Investeringsforeningen Danske Invest - Danmark - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0016208515"
+  },
+  {
+    "Code": "DKIDKF",
+    "Name": "Investeringsforeningen Danske Invest - Danmark Fokus KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060244325"
+  },
+  {
+    "Code": "DKIDKIX",
+    "Name": "Danske Invest Danmark Indeks",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "INDEX",
+    "Isin": "DK0010266238"
+  },
+  {
+    "Code": "DKIDKLOBL",
+    "Name": "Danske Invest - Danske Lange Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIDMOBL",
+    "Name": "Investeringsforeningen Danske Invest - Dannebrog Mellemlange Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010078070"
+  },
+  {
+    "Code": "DKIEAUHU",
+    "Name": "Investeringsforeningen Danske Invest - Europa H\u00f8jt Udbytte KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIEIGO",
+    "Name": "Danske Invest Euro Investment Grade-Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIEU",
+    "Name": "Danske Invest Europa",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010252956"
+  },
+  {
+    "Code": "DKIEUADKKH",
+    "Name": "Danske Invest Europa Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIEUHUAKLDKK",
+    "Name": "Investeringsforeningen Danske Invest - Europa H\u00f8jt Udbytte - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "DKIEUIX",
+    "Name": "Danske Invest Europa Indeks",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010266311"
+  },
+  {
+    "Code": "DKIEUIXBNP",
+    "Name": "Danske Invest - Europa Indeks BNP",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015737563"
+  },
+  {
+    "Code": "DKIEUSC",
+    "Name": "Danske Invest - Europa Small Cap",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIEUSCADKK",
+    "Name": "Danske Invest - Europa Small Cap - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIFJIX",
+    "Name": "Danske Invest Fjernosten",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010207141"
+  },
+  {
+    "Code": "DKIFO",
+    "Name": "Investeringsforeningen Danske Invest - Fonde KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015989610"
+  },
+  {
+    "Code": "DKIGHYB",
+    "Name": "Investeringsforeningen Danske Invest - Globale High Yield-Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIGI",
+    "Name": "Danske Invest Global",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010263052"
+  },
+  {
+    "Code": "DKIGIADKKH",
+    "Name": "Investeringsforeningen Danske Invest - Global Indeks - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIGLIADKKH",
+    "Name": "Investeringsforeningen Danske Invest - Globale Lange Indeksobligationer - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIGLIO",
+    "Name": "Danske Invest Globale Lange Indeksobligationer Kl Dkk D H",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060187771"
+  },
+  {
+    "Code": "DKIGLOVO",
+    "Name": "Danske Invest - Globale Virksomhedsobligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIGMI",
+    "Name": "Danske Invest - Globale Mellemlange Indeksobligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060550523"
+  },
+  {
+    "Code": "DKIGOM",
+    "Name": "Investeringsforeningen Danske Invest - Globale Obligationsmarkeder KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIJAP",
+    "Name": "Investeringsforeningen Danske Invest - Japan KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIKO",
+    "Name": "Danske Invest - Danske Korte Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIMA",
+    "Name": "Danske Invest Mix - Akkumulerende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060010841"
+  },
+  {
+    "Code": "DKIMDA",
+    "Name": "Danske Invest Mix Defensiv - Akkumulerende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060228633"
+  },
+  {
+    "Code": "DKIMOAK",
+    "Name": "Danske Invest Mix Offensiv - Akkumulerende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060228716"
+  },
+  {
+    "Code": "DKIMOB",
+    "Name": "Investeringsforeningen Danske Invest - Mix Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKIMOPA",
+    "Name": "Danske Invest Mix Offensiv Plus - Akkumulerende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060228989"
+  },
+  {
+    "Code": "DKINMAKK",
+    "Name": "Investeringsforeningen Danske Invest - Nye Markeder - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKINMOBL",
+    "Name": "Danske Invest - Nye Markeder Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKINVO",
+    "Name": "Investeringsforeningen Danske Invest - Nordiske Virksomhedsobligationer - Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "DKINYM",
+    "Name": "Investeringsforeningen Danske Invest - Nye Markeder KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "DNORD",
+    "Name": "Dampskibsselskabet Norden AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060083210"
+  },
+  {
+    "Code": "DONKEY",
+    "Name": "Donkeyrepublic Holding AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061540770"
+  },
+  {
+    "Code": "DSV",
+    "Name": "DSV Panalpina A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060079531"
+  },
+  {
+    "Code": "EGNETY",
+    "Name": "EgnsINVEST Ejendomme Tyskland A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060118453"
+  },
+  {
+    "Code": "EMBLA",
+    "Name": "Embla Medical hf",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "ERRIA",
+    "Name": "Erria A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060101483"
+  },
+  {
+    "Code": "ESG",
+    "Name": "Ennogie Solar Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010305077"
+  },
+  {
+    "Code": "FASTPC",
+    "Name": "Fastpasscorp A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060568145"
+  },
+  {
+    "Code": "FED",
+    "Name": "Fast Ejendom",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060522746"
+  },
+  {
+    "Code": "FFARMS",
+    "Name": "First Farms A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060056166"
+  },
+  {
+    "Code": "FLS",
+    "Name": "FLSmidth & Co.",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010234467"
+  },
+  {
+    "Code": "FLUG-B",
+    "Name": "Fl\u00fcgger group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010218189"
+  },
+  {
+    "Code": "FOBANK",
+    "Name": "FOBANK",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "FOM",
+    "Name": "FOM Technologies A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "FPIGA",
+    "Name": "Formuepleje Globale Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060337095"
+  },
+  {
+    "Code": "FPILIM",
+    "Name": "Formuepleje Limittellus",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060502631"
+  },
+  {
+    "Code": "FPKEPI",
+    "Name": "Formuepleje - Epikur KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060498269"
+  },
+  {
+    "Code": "FPKPEN",
+    "Name": "Formuepleje - Penta KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060498343"
+  },
+  {
+    "Code": "FPKSAF",
+    "Name": "Formuepleje - Safe KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060498186"
+  },
+  {
+    "Code": "FREETR",
+    "Name": "Freetrailer Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "FUISP",
+    "Name": "Fundamental Invest Stock Pick",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "FUISPA",
+    "Name": "Fundamental Invest - Stock Pick II Akkumulerende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "FYNBK",
+    "Name": "Fynske Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060520377"
+  },
+  {
+    "Code": "GABR",
+    "Name": "Gabriel Holding",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060124691"
+  },
+  {
+    "Code": "GERHSP",
+    "Name": "German High Street Properties A\/S Class B",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060093524"
+  },
+  {
+    "Code": "GJ",
+    "Name": "Glunz & Jensen",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010249309"
+  },
+  {
+    "Code": "GMAB",
+    "Name": "Genmab A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010272202"
+  },
+  {
+    "Code": "GN",
+    "Name": "GN Store Nord",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010272632"
+  },
+  {
+    "Code": "GREENM",
+    "Name": "GreenMobility A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060817898"
+  },
+  {
+    "Code": "GRLA",
+    "Name": "Groenlandsbanken AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010230630"
+  },
+  {
+    "Code": "GUBRA",
+    "Name": "Gubra A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0062266474"
+  },
+  {
+    "Code": "GYLD-A",
+    "Name": "Gyldendal A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010247527"
+  },
+  {
+    "Code": "GYLD-B",
+    "Name": "Gyldendal A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010247600"
+  },
+  {
+    "Code": "HAIDK",
+    "Name": "Handelsinvest Danmark",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "HAIDKOBL",
+    "Name": "Handelsinvest Danske Obligationer Fund",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "HARB-B",
+    "Name": "Harboes Bryggeri A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060014751"
+  },
+  {
+    "Code": "HH",
+    "Name": "H+H International A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0015202451"
+  },
+  {
+    "Code": "HLUN-A",
+    "Name": "H Lundbeck A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061804697"
+  },
+  {
+    "Code": "HLUN-B",
+    "Name": "H Lundbeck A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061804770"
+  },
+  {
+    "Code": "HOVE",
+    "Name": "Hove AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061675279"
+  },
+  {
+    "Code": "HUSCO",
+    "Name": "HusCompagniet AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061412855"
+  },
+  {
+    "Code": "HVID",
+    "Name": "Hvidbjerg Bank",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060135978"
+  },
+  {
+    "Code": "IAIFBF",
+    "Name": "IA Invest FalconBrighterFuture",
+    "Country": "Denmark",
+    "Exchange": "XCSE",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "IAIFDA",
+    "Name": "IA Invest Falcon Danske Aktier",
+    "Country": "Denmark",
+    "Exchange": "XCSE",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "IAIKGA",
+    "Name": "IA Inv ANNOX Kvant Glob Akt KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "IMPERO",
+    "Name": "Impero AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061536828"
+  },
+  {
+    "Code": "INIOPS",
+    "Name": "Investin Optimal Stabil Fund",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "INIOVM",
+    "Name": "Investin Optimal VerdensIndex Moderat",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "ISS",
+    "Name": "ISS A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060542181"
+  },
+  {
+    "Code": "JDAN",
+    "Name": "Jeudan",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061282464"
+  },
+  {
+    "Code": "JYIALVKL",
+    "Name": "Jyske Invest Aktier Lav Volatilitet KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "JYINYAKL",
+    "Name": "Jyske Invest Nye Aktiemarkeder KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "JYIOBAKKL",
+    "Name": "Jyske Invest Obligationer og Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "JYSK",
+    "Name": "Jyske Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010307958"
+  },
+  {
+    "Code": "KBHL",
+    "Name": "Copenhagen Airports AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010201102"
+  },
+  {
+    "Code": "KLEE-B",
+    "Name": "Brd. Klee A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010129089"
+  },
+  {
+    "Code": "KONSOL",
+    "Name": "Konsolidator AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061113511"
+  },
+  {
+    "Code": "KRE",
+    "Name": "Kreditbanken A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010253764"
+  },
+  {
+    "Code": "LASP",
+    "Name": "Laan & Spar Bank AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010201532"
+  },
+  {
+    "Code": "LOLB",
+    "Name": "Lollands Bank",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060000107"
+  },
+  {
+    "Code": "LUXOR-B",
+    "Name": "Investeringsselskabet Luxor A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010213628"
+  },
+  {
+    "Code": "MAERSK-A",
+    "Name": "A.P. M\u00f8ller - M\u00e6rsk A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010244425"
+  },
+  {
+    "Code": "MAERSK-B",
+    "Name": "A.P. M\u00f8ller - M\u00e6rsk A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010244508"
+  },
+  {
+    "Code": "MAJATE",
+    "Name": "Maj Invest UCITS ETF Asian Tech",
+    "Country": "Denmark",
+    "Exchange": "XCSE",
+    "Currency": "DKK",
+    "Type": "ETF",
+    "Isin": null
+  },
+  {
+    "Code": "MAJDKA",
+    "Name": "Maj Invest Danske Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "MAJDKO",
+    "Name": "Maj Invest - Danske Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060005098"
+  },
+  {
+    "Code": "MAJGO",
+    "Name": "Maj Invest - Globale Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "MAJGS",
+    "Name": "Maj Invest - Global Sundhed KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060157196"
+  },
+  {
+    "Code": "MAJHIO",
+    "Name": "Maj Invest - High Income Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "MAJMAK",
+    "Name": "Maj Invest - Makro",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "MAJMEL",
+    "Name": "Maj Invest UCITS ETF Metal&El.",
+    "Country": "Denmark",
+    "Exchange": "XCSE",
+    "Currency": "DKK",
+    "Type": "ETF",
+    "Isin": null
+  },
+  {
+    "Code": "MAJPEN",
+    "Name": "Maj Invest Pension",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060004877"
+  },
+  {
+    "Code": "MAJVA",
+    "Name": "Maj Invest - Maj Invest V\u00e6kstaktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "MAJVAA",
+    "Name": "Maj Invest Value Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "MAJVAL",
+    "Name": "Maj Invest Value Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060005338"
+  },
+  {
+    "Code": "MATAS",
+    "Name": "Matas A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060497295"
+  },
+  {
+    "Code": "MDUNDO",
+    "Name": "Mdundo Com\u00a0As",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061286101"
+  },
+  {
+    "Code": "MMIGA",
+    "Name": "Multi Manager Invest - Globale Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060447274"
+  },
+  {
+    "Code": "MMIGAA",
+    "Name": "Multi Manager Invest - Globale Aktier Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060447357"
+  },
+  {
+    "Code": "MMINO",
+    "Name": "Multi Manager Invest - Nye Obligationsmarkeder",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "MNBA",
+    "Name": "Moens Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060133841"
+  },
+  {
+    "Code": "MONSO",
+    "Name": "Monsenso AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061277977"
+  },
+  {
+    "Code": "MOVINN",
+    "Name": "Movinn AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061555539"
+  },
+  {
+    "Code": "MTHH",
+    "Name": "MT Hoejgaard Holding A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010255975"
+  },
+  {
+    "Code": "NDA-DK",
+    "Name": "Nordea Bank Abp",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "FI4000297767"
+  },
+  {
+    "Code": "NETC",
+    "Name": "Netcompany Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060952919"
+  },
+  {
+    "Code": "NEWCAP",
+    "Name": "Newcap Holding A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010212570"
+  },
+  {
+    "Code": "NEXCOM",
+    "Name": "Nexcom AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061417144"
+  },
+  {
+    "Code": "NKT",
+    "Name": "NKT A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010287663"
+  },
+  {
+    "Code": "NLFSK",
+    "Name": "Nilfisk Holding A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060907293"
+  },
+  {
+    "Code": "NNIT",
+    "Name": "Nnit AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060580512"
+  },
+  {
+    "Code": "NORD",
+    "Name": "Nord.investments A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NORTHM",
+    "Name": "North Media A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010270347"
+  },
+  {
+    "Code": "NOVO-B",
+    "Name": "Novo Nordisk A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0062498333"
+  },
+  {
+    "Code": "NSIS-B",
+    "Name": "Novonesis (Novozymes) A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060336014"
+  },
+  {
+    "Code": "NTG",
+    "Name": "NTG Nordic Transport Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010224666"
+  },
+  {
+    "Code": "NYIBDA",
+    "Name": "Nykredit Invest B\u00e6redygtige Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NYIDA",
+    "Name": "Nykredit Invest Danske Aktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NYIDAA",
+    "Name": "Nykredit Invest Danske aktier Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060034270"
+  },
+  {
+    "Code": "NYIGFA",
+    "Name": "Multi Manager Invest - USA Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NYIGLA",
+    "Name": "Nykredit Invest - Globale Fokusaktier",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NYIKO",
+    "Name": "Nykredit Invest Korte Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "NYIKRO",
+    "Name": "Nykredit Invest - Kreditobligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060356202"
+  },
+  {
+    "Code": "NYILO",
+    "Name": "Nykredit Invest Lange Obligationer",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "OKEAC",
+    "Name": "Ostasiatiske Kompagni A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061277894"
+  },
+  {
+    "Code": "ORSTED",
+    "Name": "Orsted A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060094928"
+  },
+  {
+    "Code": "PAAL-B",
+    "Name": "Per Aarsleff Holding A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060700516"
+  },
+  {
+    "Code": "PARKEN",
+    "Name": "PARKEN Sport & Entertainment",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010237643"
+  },
+  {
+    "Code": "PARKST-A",
+    "Name": "Park Street A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010158500"
+  },
+  {
+    "Code": "PEG",
+    "Name": "Pharma Equity Group A\/S Cl A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061155009"
+  },
+  {
+    "Code": "PFIBAA",
+    "Name": "PFA Invest Balance A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PFIBAB",
+    "Name": "PFA Invest Balance B",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PFIBAC",
+    "Name": "PFA Invest Balance C",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PFIDKA",
+    "Name": "PFA Invest Danske Aktier Fund",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PFIGLA",
+    "Name": "PFA Invest Globale Aktier Fund",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PFINV",
+    "Name": "Papirfabrikken Invest A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PMIFRKLN",
+    "Name": "PortfolioManager Fairrente kl n",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "PMINDI",
+    "Name": "PortfolioManager NewDeal Invest kl n",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PMINDIAKK",
+    "Name": "PortfolioMan NewDeal Invest Akk., kl n",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "PNDORA",
+    "Name": "Pandora A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060252690"
+  },
+  {
+    "Code": "PRIMOF",
+    "Name": "Prime Office A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060137594"
+  },
+  {
+    "Code": "QINTER",
+    "Name": "Q Interline AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061677135"
+  },
+  {
+    "Code": "RBLN-B",
+    "Name": "Roblon A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060485019"
+  },
+  {
+    "Code": "RBREW",
+    "Name": "Royal Unibrew A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060634707"
+  },
+  {
+    "Code": "RIAS-B",
+    "Name": "RIAS A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010125848"
+  },
+  {
+    "Code": "RILBA",
+    "Name": "Ringkjoebing Landbobank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060854669"
+  },
+  {
+    "Code": "RLAINV",
+    "Name": "Ress Life Investments A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060315604"
+  },
+  {
+    "Code": "ROCK-A",
+    "Name": "ROCKWOOL International A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010219070"
+  },
+  {
+    "Code": "ROCK-B",
+    "Name": "ROCKWOOL International A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0063855168"
+  },
+  {
+    "Code": "ROV",
+    "Name": "Rovsing A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061152170"
+  },
+  {
+    "Code": "RTX",
+    "Name": "RTX A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010267129"
+  },
+  {
+    "Code": "SAMPO-DKK",
+    "Name": "Sampo Plc A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SCHO",
+    "Name": "Schouw & Co.",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010253921"
+  },
+  {
+    "Code": "SDIGBA",
+    "Name": "SDG Invest GlobB\u00e6redyg Akt akk",
+    "Country": "Denmark",
+    "Exchange": "XCSE",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SEIDAAP",
+    "Name": "SEBinvest - Danske Aktier Akkumulerende AKL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SEIDKAP",
+    "Name": "SEBinvest - Danske Aktier AKL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SEIESCP",
+    "Name": "SEBinvest - Europa Small Cap AKL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SHAPE",
+    "Name": "Shape Robotics AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061273125"
+  },
+  {
+    "Code": "SIG",
+    "Name": "Scandinavian Investment Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060038933"
+  },
+  {
+    "Code": "SKAKO",
+    "Name": "SKAKO A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010231877"
+  },
+  {
+    "Code": "SKIGLO",
+    "Name": "SKAGEN Global A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "NO0008004009"
+  },
+  {
+    "Code": "SKIKON",
+    "Name": "SKAGEN Kon-Tiki A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "NO0010140502"
+  },
+  {
+    "Code": "SKIM2",
+    "Name": "SKAGEN - m\u00b2",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SKIVEK",
+    "Name": "SKAGEN Vekst A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "NO0008000445"
+  },
+  {
+    "Code": "SKJE",
+    "Name": "Skjern Bank A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010295922"
+  },
+  {
+    "Code": "SMSMED",
+    "Name": "Scandinavian Medical Solutions AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061675006"
+  },
+  {
+    "Code": "SOLAR-B",
+    "Name": "Solar A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010274844"
+  },
+  {
+    "Code": "SPG",
+    "Name": "SP Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061027356"
+  },
+  {
+    "Code": "SPIC25KL",
+    "Name": "Sparindex INDEX OMX C25 KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIDJWKL",
+    "Name": "Sparinvest DJSI World",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010297464"
+  },
+  {
+    "Code": "SPIDKAKLA",
+    "Name": "Sparinvest Danske Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIEMIKL",
+    "Name": "Sparinvest INDEX Emerging Markets KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060300762"
+  },
+  {
+    "Code": "SPIEUCKL",
+    "Name": "Sparinvest Europa Small Cap",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010297621"
+  },
+  {
+    "Code": "SPIEUGKL",
+    "Name": "Sparinvest Europa Growth",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010297548"
+  },
+  {
+    "Code": "SPIEUVKL",
+    "Name": "Sparinvest INDEX Europa Value KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIGLAMRIKL",
+    "Name": "Sparinvest INDEX Globale Akt Min Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIJAGKL",
+    "Name": "Sparinvest Japan Growth",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010297977"
+  },
+  {
+    "Code": "SPIKOOKLA",
+    "Name": "Sydinvest Korte Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SPILOLKLA",
+    "Name": "Sparinvest - Lange Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIMHRKLA",
+    "Name": "Sparinvest - Mix Hoj Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIMLOKLA",
+    "Name": "Sparinvest - Mellemlange Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIMLRKLA",
+    "Name": "Sparinvest Mix Lav Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIMMRKLA",
+    "Name": "Sparinvest - Mix Mellem Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPINOBKLA",
+    "Name": "Sparinvest Nye Obligationsmarkeder KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0016030786"
+  },
+  {
+    "Code": "SPISOKLA",
+    "Name": "Sparindex INDEX Stabile Obligationer KL A",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIUSGKL",
+    "Name": "Sparinvest US Growth",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010298272"
+  },
+  {
+    "Code": "SPIUSSKL",
+    "Name": "Sparinvest USA Small Cap",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010298355"
+  },
+  {
+    "Code": "SPIUSVKL",
+    "Name": "Sparinvest USA Value",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0010298439"
+  },
+  {
+    "Code": "SPIVAKLA",
+    "Name": "Sparinvest Value Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIVEMKLA",
+    "Name": "Sparinvest Value Emerging Markets KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPIVEUKLA",
+    "Name": "Sparinvest Value Europa KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPKSJF",
+    "Name": "Sparekassen Sjaelland-Fyn A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060670776"
+  },
+  {
+    "Code": "SPVIGAKL",
+    "Name": "Sparinvest INDEX Globale Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060747822"
+  },
+  {
+    "Code": "SPVIGAMRAKL",
+    "Name": "Sparinvest INDEX Global Aktier Min. Risiko Akk. KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0060748127"
+  },
+  {
+    "Code": "SPVIHRKL",
+    "Name": "Sparinvest INDEX H\u00f8j Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPVILRKL",
+    "Name": "Sparinvest INDEX Lav Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SPVIMRKL",
+    "Name": "Sparinvest INDEX Mellem Risiko KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SRIGAU",
+    "Name": "StockRate Invest - Globale Aktier Udloddende",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060206316"
+  },
+  {
+    "Code": "SSIEGVEURR",
+    "Name": "Sparinv SICAV",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "EUR",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SSIEUVEURR",
+    "Name": "Sparinv SICAV",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "EUR",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SSIPEURR",
+    "Name": "Sparinvest SICAV Procedo",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "EUR",
+    "Type": "FUND",
+    "Isin": "LU0139792278"
+  },
+  {
+    "Code": "STENO",
+    "Name": "Stenocare AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061078425"
+  },
+  {
+    "Code": "STG",
+    "Name": "Scandinavian Tobacco Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060696300"
+  },
+  {
+    "Code": "STIIAM",
+    "Name": "Storebrand Indeks - Alle Markeder",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "STRAP",
+    "Name": "STRAP",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "STRINV",
+    "Name": "Strategic Investments A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0010271238"
+  },
+  {
+    "Code": "SWISS",
+    "Name": "Swiss Properties Invest A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061805660"
+  },
+  {
+    "Code": "SYIFJERADKKA",
+    "Name": "Sydinvest Fjern\u00f8sten Akkumulerende KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYIGEAADKK",
+    "Name": "Sydinvest Globale EM-Aktier KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYIKOADKK",
+    "Name": "Sydinvest Korte Obligationer KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYIMOADKK",
+    "Name": "Sydinvest Mellemlange Obligationer A DKK",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYIMOADKKA",
+    "Name": "Sydinvest Mellemlange Obligationer A DKK Akk",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SYIVLVADKK",
+    "Name": "Sydinvest Verden Ligev\u00e6gt & Value KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYIVOHYADKK",
+    "Name": "Sydinvest Virksomhedsobligationer HY KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "SYVAUA",
+    "Name": "Sydinvest - Aggressiv Udb",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "SYVKUA",
+    "Name": "Sydinvest - Konservativ Udb",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "TCM",
+    "Name": "TCM Group",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060915478"
+  },
+  {
+    "Code": "TGAMES",
+    "Name": "TROPHY GAMES Development AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061537206"
+  },
+  {
+    "Code": "TIV",
+    "Name": "Tivoli A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060726743"
+  },
+  {
+    "Code": "TRIFOR",
+    "Name": "Trifork Holding AG",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "CH1111227810"
+  },
+  {
+    "Code": "TRMD-A",
+    "Name": "TORM plc",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "GB00BZ3CNK81"
+  },
+  {
+    "Code": "TRYG",
+    "Name": "Tryg A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060636678"
+  },
+  {
+    "Code": "UIE",
+    "Name": "UIE PLC",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "MT0002400118"
+  },
+  {
+    "Code": "UNLGRP",
+    "Name": "Unlimit Group A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "VAIGAKA",
+    "Name": "ValueInvest Global Akk KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "VAIGLOA",
+    "Name": "ValueInvest Global KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": null
+  },
+  {
+    "Code": "VIRO",
+    "Name": "ViroGates A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061030574"
+  },
+  {
+    "Code": "VWS",
+    "Name": "Vestas Wind Systems A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061539921"
+  },
+  {
+    "Code": "WEIOAV",
+    "Name": "Investin - Othania Etisk Formuev\u00e6kst KL",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": null
+  },
+  {
+    "Code": "WEKAKLOSI",
+    "Name": "Kapitalforeningen Wealth Invest - Othania Stabil Investering AKL Fund",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "FUND",
+    "Isin": "DK0061801164"
+  },
+  {
+    "Code": "WIRTEK",
+    "Name": "Wirtek A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060040913"
+  },
+  {
+    "Code": "WMA",
+    "Name": "WindowMaster International AS",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0061278355"
+  },
+  {
+    "Code": "XACTC25",
+    "Name": "Xact Kapitalforvaltning",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "ETF",
+    "Isin": "SE0011452127"
+  },
+  {
+    "Code": "ZEAL",
+    "Name": "Zealand Pharma A\/S",
+    "Country": "Denmark",
+    "Exchange": "CO",
+    "Currency": "DKK",
+    "Type": "Common Stock",
+    "Isin": "DK0060257814"
+  }
+]

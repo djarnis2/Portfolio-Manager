@@ -7,6 +7,11 @@
 <div sec:authorize="isAuthenticated()">
     <h1>Personal Page</h1>
     Logged in as <p sec:authentication="name"></p>
+    <div sec:authorize="isAuthenticated()">
+        <a th:href="@{/portfolio/new}" class="btn btn-primary">
+            Create new portfolio
+        </a>
+    </div>
 </div>
 
 <div sec:authorize="isAnonymous()">
