@@ -8,7 +8,6 @@ import com.lars.portfolio_manager.services.PortfolioService;
 import com.lars.portfolio_manager.services.TickerInfoService;
 import com.lars.portfolio_manager.services.TransactionService;
 import jakarta.validation.Valid;
-import org.springframework.aot.hint.annotation.RegisterReflection;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -50,8 +49,8 @@ public class TransactionController {
         model.addAttribute("transactionForm", TransactionForm.fromTickerInfo(
                 code,
                 isin,
-                exchange,
                 name,
+                exchange,
                 currency
         ));
 

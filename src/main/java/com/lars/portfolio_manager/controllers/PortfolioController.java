@@ -40,7 +40,7 @@ public class PortfolioController {
         Portfolio portfolio = portfolioService.findByIdAndOwner(id, currentUser);
 
         model.addAttribute("portfolio", portfolio);
-        model.addAttribute("transcations", transactionService.findTransactionsForPortfolio(portfolio));
+        model.addAttribute("transactions", transactionService.findTransactionsForPortfolio(portfolio));
         return "portfolio-detail";
     }
 

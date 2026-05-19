@@ -4,28 +4,28 @@
 <body>
 <div th:replace="~{fragments/navbar :: navbar}"></div>
 <hr/>
-<div sec:authorize="isAuthenticated()">
-    <h1>
-        <span th:text="${#strings.capitalize(#authentication.name)}"></span>'s Personal Page
-    </h1>
-    <div>
-        <h2>List of Portfolios</h2>
-        <hr>
-        <ul>
-            <li th:each="pf : ${portfolios}">
-                <a th:href="@{/portfolio/{id}(id=${pf.getId()})}" th:text="${pf.name}"></a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <a th:href="@{/portfolio/new}" class="btn btn-primary">
-            Create new portfolio
-        </a>
-    </div>
-</div>
+<main class="container mt-4">
+    <div sec:authorize="isAuthenticated()">
 
-<div sec:authorize="isAnonymous()">
-    <p>Not logged in</p>
-</div>
+        <div>
+            <h2>List of Portfolios</h2>
+            <hr>
+            <ul>
+                <li th:each="pf : ${portfolios}">
+                    <a th:href="@{/portfolio/{id}(id=${pf.getId()})}" th:text="${pf.name}"></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <a th:href="@{/portfolio/new}" class="btn btn-primary">
+                Create new portfolio
+            </a>
+        </div>
+    </div>
+
+    <div sec:authorize="isAnonymous()">
+        <p>Not logged in</p>
+    </div>
+</main>
 </body>
 </html>
