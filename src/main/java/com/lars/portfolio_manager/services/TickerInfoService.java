@@ -34,12 +34,13 @@ public class TickerInfoService {
     }
 
     public List<TickerInfo> tickerSearch(Exchange exchange, String query) {
-        String normalized = query.toLowerCase();
+        String toLower = query.toLowerCase();
+        String toUpper = query.toUpperCase();
 
         return loadExchange(exchange)
                 .stream()
-                .filter(ticker -> ticker.name().contains(normalized)
-                || ticker.code().contains(normalized)
+                .filter(ticker -> ticker.name().contains(toLower)
+                || ticker.code().contains(toUpper)
                 )
                 .limit(10)
                 .toList();

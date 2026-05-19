@@ -2,6 +2,9 @@ package com.lars.portfolio_manager.entities;
 
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Entity
 public class Portfolio {
 
@@ -14,8 +17,10 @@ public class Portfolio {
     @ManyToOne(optional = false)
     private CustomUser owner;
 
-    public Portfolio() {
-    }
+    @OneToMany(mappedBy = "portfolio", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Transaction> transactions = new ArrayList<>();
+
+    public Portfolio() {}
 
     public Portfolio(String name, CustomUser owner) {
         this.name = name;

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/head :: head('Portfolio Detail')}"></head>
+
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div>
+    <div sec:authorize="isAuthenticated()">
+        <h1>Portfolio Detail Page</h1>
+        <h1 th:text="${portfolio.name}"></h1>
+        <h3>Transactions:</h3>
+        <ul>
+            <li th:each="tr : ${transcations}">
+                <span th:text="${tr.getCompanyName()}"></span>
+                <span th:text="${tr.getAmount()}"></span>
+                <span th:text="${tr.getPrice()}"></span>
+                <span th:text="${tr.getPrice() * tr.getAmount()} + ' ' + ${tr.currency}">0.00</span>
+                <hr>
+            </li>
+        </ul>
+        <div>
+            <a th:href="@{/portfolio/{id}/transaction/new(id=${portfolio.getId()})}">Add transaction</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

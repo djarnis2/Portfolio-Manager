@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/head :: head('Transaction Form')}"></head>
+
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<div>
+    <form th:action="@{/portfolio/{id}/transaction/new/search(id=${portfolio.getId()})}"
+          method="get">
+
+        <div>
+            <label for="exchange-selector">Choose Stock Exchange</label>
+            <select name="exchange">
+                <option th:each="exchange: ${exchanges}"
+                        th:value="${exchange.code()}"
+                        th:text="${exchange.displayName()}"
+                >
+                </option>
+            </select>
+        </div>
+        <div>
+            <label for="query">Search ticker, name or ISIN</label>
+            <input name="query" type="text">
+        </div>
+        <button type="submit">Search stocks or fonds</button>
+    </form>
+    <div th:if="${tickerInfo}">
+        <ul>
+            <li th:each="ticker : ${tickerInfo}">
+                <span th:text="${ticker.name()}">Name</span>
+                <span th:text="${ticker.code()}">Code</span>
+                <span th:text="${ticker.isin()}"></span>
+                <a th:href="@{/portfolio/{id}/transaction/new(
+                id=${portfolio.getId()},
+                code=${ticker.code()},
+                isin=${ticker.isin()},
+                exchange=${ticker.exchange()},
+                name=${ticker.name},
+                currency=${ticker.currency()}
+                )}">
+                    Select
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <form th:action="@{/portfolio/{id}/transactions(id=${portfolio.getId()})}"
+        th:object="${transactionForm}"
+        method="post">
+
+            <div>
+                <label for="code">Ticker</label>
+                <input id="code" type="text" th:field="*{code}">
+            </div>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" th:field="*{name}">
+            </div>
+            <div>
+                <label for="isin">ISIN</label>
+                <input id="isin" type="text" th:field="*{isin}">
+            </div>
+            <div>
+                <label for="exchange">Exchange</label>
+                <input id="exchange" type="text" th:field="*{exchange}">
+            </div>
+            <div>
+                <label for="amount">Amount</label>
+                <input id="amount" type="text" th:field="*{amount}">
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input id="price" type="text" th:field="*{price}">
+            </div>
+            <div>
+                <input type="hidden" th:field="*{currency}">
+            </div>
+            <div>
+                <label for="date">Date</label>
+                <input id="date" type="date" th:field="*{date}">
+            </div>
+            <div>
+                <label for="type">Type</label>
+                <input id="type" type="text" th:field="*{type}">
+            </div>
+
+            <button type="submit">Save transaction</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
