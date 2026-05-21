@@ -4,39 +4,66 @@
 
 <body>
 <div th:replace="~{fragments/navbar :: navbar}"></div>
+
 <main class="container mt-4">
     <div>
         <div sec:authorize="isAuthenticated()">
             <h2>
-                Portfolio page:
+                Transaction page for:
                 <span th:text="${portfolio.name}"></span>
             </h2>
             <br>
-            <h4>Transactions:</h4>
+            <h4>Portfolio Holdings:</h4>
             <table class="table table-striped">
                 <thead>
                 <tr>
                     <th>Name</th>
                     <th>Amount</th>
-                    <th>Price</th>
-                    <th>Total</th>
+                    <th>Average Price</th>
+                    <th>Total Cost</th>
                 </tr>
                 </thead>
 
                 <tbody>
-                <tr th:each="tr : ${transactions}">
-                    <td th:text="${tr.ticker}"></td>
-                    <td th:text="${tr.amount}"></td>
-                    <td th:text="${tr.price}"></td>
-                    <td th:text="${tr.price * tr.amount} + ' ' + ${tr.currency}">0.00</td>
+                <tr th:each="stock : ${overview}">
+                    <td th:text="${stock.companyName()}"></td>
+                    <td th:text="${stock.totalAmount()}"></td>
+                    <td th:text="${stock.averagePrice()}"></td>
+                    <td th:text="${stock.totalCost()}"></td>
                 </tr>
                 </tbody>
 
             </table>
 
-            <div>
-                <a th:href="@{/portfolio/{id}/transaction/new(id=${portfolio.getId()})}">Add transaction</a>
-            </div>
+
+<!--            <div class="bg-secondary em h5 d-flex justify-content-between text-white">-->
+<!--                <div>-->
+<!--                    <span>Purchase price of stocks and funds: </span>-->
+<!--                    <span th:text="${portfolio.getTransactionValue(6.45)}"></span>-->
+<!--                </div>-->
+
+
+<!--                <div>-->
+<!--                    <span>Cash funds: </span>-->
+<!--                    <span th:text="${portfolio.getCashValue()}"></span>-->
+<!--                </div>-->
+
+
+<!--                <div>-->
+<!--                    <span>-->
+<!--                        <a th:href="@{/portfolio-transactions/{id}/transaction/new(id=${portfolio.getId()})}"-->
+<!--                           class="btn btn-primary">Stock transaction</a>-->
+<!--                    </span>-->
+<!--                    <span>-->
+<!--                        <a th:href="@{/portfolio-transactions/{id}/transaction/cash(id=${portfolio.getId()})}"-->
+<!--                           class="btn btn-primary">Cash transaction</a>-->
+<!--                    </span>-->
+<!--                </div>-->
+
+
+<!--            </div>-->
+
+
         </div>
     </div>
 </main>

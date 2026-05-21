@@ -25,6 +25,8 @@ public class Transaction {
     private TransactionType transactionType;
     private LocalDateTime dateTime;
     private String currency;
+    private BigDecimal cashAmount;
+    private BigDecimal sum;
 
     public Transaction() {
     }
@@ -48,6 +50,24 @@ public class Transaction {
         this.isin = isin;
         this.currency = currency;
         this.dateTime = dateTime;
+        this.sum = calculateSum(amount, price);
+    }
+
+    public Transaction(Portfolio portfolio,
+                       BigDecimal cashAmount,
+                       String currency,
+                       TransactionType transactionType,
+                       LocalDateTime dateTime
+                       ) {
+        this.portfolio = portfolio;
+        this.cashAmount = cashAmount;
+        this.currency = currency;
+        this.transactionType = transactionType;
+        this.dateTime = dateTime;
+    }
+
+    public BigDecimal calculateSum(int amount, BigDecimal price) {
+        return price.multiply(BigDecimal.valueOf(amount));
     }
 
     public Portfolio getPortfolio() {
@@ -90,6 +110,16 @@ public class Transaction {
     public String getCurrency() {
         return currency;
     }
+
+    public BigDecimal getSum() {
+        return sum;
+    }
+
+    public BigDecimal getCashAmount() {
+        return cashAmount;
+    }
+
+
 
     public void setPortfolio(Portfolio portfolio) {
         this.portfolio = portfolio;

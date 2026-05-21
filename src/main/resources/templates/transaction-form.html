@@ -5,12 +5,12 @@
 <body>
 <div th:replace="~{fragments/navbar :: navbar}"></div>
 <div>
-    <form th:action="@{/portfolio/{id}/transaction/new/search(id=${portfolio.getId()})}"
+    <form th:action="@{/portfolio-transactions/{id}/transaction/new/search(id=${portfolio.getId()})}"
           method="get">
 
         <div>
             <label for="exchange-selector">Choose Stock Exchange</label>
-            <select name="exchange">
+            <select id="exchange-selector" name="exchange">
                 <option th:each="exchange: ${exchanges}"
                         th:value="${exchange.code()}"
                         th:text="${exchange.displayName()}"
@@ -20,7 +20,7 @@
         </div>
         <div>
             <label for="query">Search ticker, name or ISIN</label>
-            <input name="query" type="text">
+            <input id="query" name="query" type="text">
         </div>
         <button type="submit">Search stocks or fonds</button>
     </form>
@@ -30,7 +30,7 @@
                 <span th:text="${ticker.name()}">Name</span>
                 <span th:text="${ticker.code()}">Code</span>
                 <span th:text="${ticker.isin()}"></span>
-                <a th:href="@{/portfolio/{id}/transaction/new(
+                <a th:href="@{/portfolio-transactions/{id}/transaction/new(
                 id=${portfolio.getId()},
                 code=${ticker.code()},
                 isin=${ticker.isin()},
@@ -44,7 +44,7 @@
         </ul>
     </div>
     <div>
-        <form th:action="@{/portfolio/{id}/transactions(id=${portfolio.getId()})}"
+        <form th:action="@{/portfolio-transactions/{id}/transactions(id=${portfolio.getId()})}"
         th:object="${transactionForm}"
         method="post">
 
@@ -76,8 +76,8 @@
                 <input type="hidden" th:field="*{currency}">
             </div>
             <div>
-                <label for="date">Date</label>
-                <input id="date" type="date" th:field="*{date}">
+                <label for="dateTime">Date</label>
+                <input id="dateTime" type="datetime-local" th:field="*{dateTime}">
             </div>
             <div>
                 <label for="type">Type</label>

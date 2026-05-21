@@ -7,9 +7,10 @@ import org.springframework.stereotype.Service;
 import tools.jackson.core.type.TypeReference;
 import tools.jackson.databind.ObjectMapper;
 
-import javax.imageio.IIOException;
 import java.io.IOException;
 import java.util.List;
+
+
 
 @Service
 public class TickerInfoService {
@@ -34,15 +35,20 @@ public class TickerInfoService {
     }
 
     public List<TickerInfo> tickerSearch(Exchange exchange, String query) {
-        String toLower = query.toLowerCase();
-        String toUpper = query.toUpperCase();
+
 
         return loadExchange(exchange)
                 .stream()
-                .filter(ticker -> ticker.name().contains(toLower)
-                || ticker.code().contains(toUpper)
+                .filter(ticker ->
+                        containsIgnoreCase(ticker.name(), query) ||
+                                containsIgnoreCase(ticker.code(), query) ||
+                                containsIgnoreCase(ticker.isin(), query)
                 )
                 .limit(10)
                 .toList();
+    }
+
+    private boolean containsIgnoreCase(String value, String query) {
+        return value != null && value.toLowerCase().contains(query.toLowerCase());
     }
 }

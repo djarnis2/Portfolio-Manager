@@ -10,7 +10,7 @@
         method="post">
   <div>
     <label for="name">Enter portfolio name</label>
-    <input type="text" th:field="*{name}">
+    <input id="name" type="text" th:field="*{name}">
     <p th:if="${#fields.hasErrors('name')}"
        th:errors="*{name}">
     </p>

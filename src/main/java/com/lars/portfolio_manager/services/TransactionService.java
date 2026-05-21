@@ -1,7 +1,7 @@
 package com.lars.portfolio_manager.services;
 
+import com.lars.portfolio_manager.dto.CashTransactionForm;
 import com.lars.portfolio_manager.dto.TransactionForm;
-import com.lars.portfolio_manager.entities.Exchange;
 import com.lars.portfolio_manager.entities.Portfolio;
 import com.lars.portfolio_manager.entities.Transaction;
 import com.lars.portfolio_manager.entities.TransactionType;
@@ -34,7 +34,19 @@ public class TransactionService {
                 transactionType,
                 form.isin(),
                 form.currency(),
-                form.date().atStartOfDay()
+                form.dateTime()
+        );
+        return transactionRepository.save(transaction);
+    }
+
+    public Transaction createCashTransaction(Portfolio portfolio, CashTransactionForm form) {
+
+        Transaction transaction = new Transaction(
+                portfolio,
+                form.cashAmount(),
+                "DKK",
+                form.transactionType(),
+                form.dateTime()
         );
         return transactionRepository.save(transaction);
     }

@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public record TransactionForm(
         String code,
@@ -26,7 +26,7 @@ public record TransactionForm(
         BigDecimal price,
 
         @NotNull(message = "Date is required")
-        LocalDate date
+        LocalDateTime dateTime
 ) {
     public static TransactionForm empty() {
         return fromTickerInfo(null, null, null, null, null);
@@ -46,7 +46,7 @@ public record TransactionForm(
                 "BUY",
                 1,
                 null,
-                LocalDate.now()
+                LocalDateTime.now()
         );
     }
 }

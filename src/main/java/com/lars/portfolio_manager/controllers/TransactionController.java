@@ -1,9 +1,8 @@
 package com.lars.portfolio_manager.controllers;
 
+import com.lars.portfolio_manager.dto.CashTransactionForm;
 import com.lars.portfolio_manager.dto.TransactionForm;
-import com.lars.portfolio_manager.entities.CustomUser;
-import com.lars.portfolio_manager.entities.Exchange;
-import com.lars.portfolio_manager.entities.Portfolio;
+import com.lars.portfolio_manager.entities.*;
 import com.lars.portfolio_manager.services.PortfolioService;
 import com.lars.portfolio_manager.services.TickerInfoService;
 import com.lars.portfolio_manager.services.TransactionService;
@@ -13,6 +12,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Controller
 public class TransactionController {
@@ -33,7 +34,7 @@ public class TransactionController {
 //    }
 
 
-    @GetMapping("/portfolio/{portfolioId}/transaction/new")
+    @GetMapping("/portfolio-transactions/{portfolioId}/transaction/new")
     public String newTransactionForm(@PathVariable Long portfolioId,
                                      @AuthenticationPrincipal CustomUser currentUser,
                                      @RequestParam(required = false) String code,
@@ -57,7 +58,19 @@ public class TransactionController {
         return "transaction-form";
     }
 
-    @GetMapping("/portfolio/{portfolioId}/transaction/new/search")
+    @GetMapping("/portfolio-transactions/{portfolioId}/transaction/cash")
+    public String newCashTransactionForm(@PathVariable Long portfolioId,
+                                     @AuthenticationPrincipal CustomUser currentUser,
+                                     Model model) {
+        Portfolio portfolio = portfolioService.findByIdAndOwner(portfolioId, currentUser);
+        model.addAttribute("portfolio", portfolio);
+        model.addAttribute("cashTransactionForm", CashTransactionForm.empty());
+        model.addAttribute("transactionType", List.of(TransactionType.DEPOSIT, TransactionType.WITHDRAW));
+
+        return "cash-transaction";
+    }
+
+    @GetMapping("/portfolio-transactions/{portfolioId}/transaction/new/search")
     public String searchTicker(@PathVariable Long portfolioId,
                                      @RequestParam Exchange exchange,
                                      @RequestParam String query,
@@ -73,7 +86,7 @@ public class TransactionController {
         return "transaction-form";
     }
 
-    @PostMapping("/portfolio/{portfolioId}/transactions")
+    @PostMapping("/portfolio-transactions/{portfolioId}/transactions")
     public String createTransaction(@PathVariable Long portfolioId,
                                     @Valid @ModelAttribute TransactionForm form,
                                     BindingResult bindingResult,
@@ -98,7 +111,26 @@ public class TransactionController {
         }
 
         transactionService.createTransaction(portfolio, form);
-        return "redirect:/portfolio/" + portfolioId;
+        return "redirect:/portfolio-transactions/" + portfolioId;
+    }
+
+    @PostMapping("/portfolio-transactions/{portfolioId}/cashtransactions")
+    public String createCashTransaction(@PathVariable Long portfolioId,
+                                    @Valid @ModelAttribute CashTransactionForm form,
+                                    BindingResult bindingResult,
+                                    @AuthenticationPrincipal CustomUser currentUser,
+                                    Model model
+    ) {
+        Portfolio portfolio = portfolioService.findByIdAndOwner(portfolioId, currentUser);
+
+        if (bindingResult.hasErrors()) {
+            model.addAttribute(portfolio);
+            model.addAttribute(form);
+            return "/cash-transaction";
+        }
+
+        transactionService.createCashTransaction(portfolio, form);
+        return "redirect:/portfolio-transactions/" + portfolioId;
     }
 
 }

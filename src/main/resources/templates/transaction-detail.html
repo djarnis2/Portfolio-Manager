@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/head :: head('Transaction Detail')}"></head>
+
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<main class="container mt-4">
+    <div>
+        <div sec:authorize="isAuthenticated()">
+            <h2>
+                Transaction page for:
+                <span th:text="${portfolio.name}"></span>
+            </h2>
+            <br>
+            <h4>Transactions:</h4>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                    <th>Sum</th>
+                    <th>Cash</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr th:each="tr : ${transactions}">
+                    <td th:text="${tr.getTransactionType()}"></td>
+                    <td th:text="${tr.companyName}"></td>
+                    <td th:text="${tr.amount}"></td>
+                    <td th:text="${tr.price}"></td>
+                    <td th:classappend="text-success" th:text="${tr.sum}"></td>
+                    <td th:if="${tr.transactionType != null}"
+                        th:classappend="${tr.transactionType.name() == 'DEPOSIT'} ? 'text-success' :
+                    (${tr.transactionType.name() == 'WITHDRAW'} ? 'text-danger' : '')"
+                        th:text="${tr.cashAmount}">
+                    </td>
+                    <td th:text="${tr.dateTime}"></td>
+                </tr>
+                </tbody>
+
+            </table>
+
+
+            <div class="bg-secondary em h5 d-flex justify-content-between text-white">
+                <div>
+                    <span>Purchase price of stocks and funds: </span>
+                    <span th:text="${portfolio.getTransactionValue(6.45)}"></span>
+                </div>
+
+
+                <div>
+                    <span>Cash funds: </span>
+                    <span th:text="${portfolio.getCashValue()}"></span>
+                </div>
+
+
+                <div>
+                    <span>
+                        <a th:href="@{/portfolio-transactions/{id}/transaction/new(id=${portfolio.getId()})}"
+                           class="btn btn-primary">Stock transaction</a>
+                    </span>
+                    <span>
+                        <a th:href="@{/portfolio-transactions/{id}/transaction/cash(id=${portfolio.getId()})}"
+                           class="btn btn-primary">Cash transaction</a>
+                    </span>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+</main>
+</body>
+</html>

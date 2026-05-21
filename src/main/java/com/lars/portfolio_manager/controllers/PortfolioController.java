@@ -33,14 +33,25 @@ public class PortfolioController {
         return "portfolio-form";
     }
 
-    @GetMapping("/portfolio/{id}")
-    public String showPortfolio(@PathVariable Long id,
+    @GetMapping("/portfolio-transactions/{id}")
+    public String showPortfolioTransactions(@PathVariable Long id,
                                 @AuthenticationPrincipal CustomUser currentUser,
                                 Model model) {
         Portfolio portfolio = portfolioService.findByIdAndOwner(id, currentUser);
 
         model.addAttribute("portfolio", portfolio);
         model.addAttribute("transactions", transactionService.findTransactionsForPortfolio(portfolio));
+        return "transaction-detail";
+    }
+
+    @GetMapping("/portfolio-detail/{id}")
+    public String showPortfolioOverview(@PathVariable Long id,
+                                @AuthenticationPrincipal CustomUser currentUser,
+                                Model model) {
+        Portfolio portfolio = portfolioService.findByIdAndOwner(id, currentUser);
+
+        model.addAttribute("portfolio", portfolio);
+        model.addAttribute("overview", portfolioService.getHoldingOverview(portfolio));
         return "portfolio-detail";
     }
 
@@ -69,7 +80,7 @@ public class PortfolioController {
 
         Portfolio portfolio = portfolioService.createPortfolio(form.name(), currentUser);
 
-        return "redirect:/portfolio/" + portfolio.getId();
+        return "redirect:/portfolio-transactions/" + portfolio.getId();
     }
 
 }

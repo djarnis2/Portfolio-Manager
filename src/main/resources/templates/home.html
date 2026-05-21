@@ -11,8 +11,11 @@
             <h2>List of Portfolios</h2>
             <hr>
             <ul>
-                <li th:each="pf : ${portfolios}">
-                    <a th:href="@{/portfolio/{id}(id=${pf.getId()})}" th:text="${pf.name}"></a>
+                <li th:each="pf : ${portfolios}" class="d-flex gap-3 align-items-center mb-2" >
+                    <span th:text="${pf.name}" class="col-2"></span>
+                    <a class="btn btn-outline-primary btn-sm " th:href="@{/portfolio-transactions/{id}(id=${pf.getId()})}">Transaction Page</a>
+                    <a class="btn btn-outline-primary btn-sm " th:href="@{/portfolio-detail/{id}(id=${pf.getId()})}">Overview Page</a>
+
                 </li>
             </ul>
         </div>

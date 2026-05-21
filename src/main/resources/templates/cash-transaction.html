@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="https://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/head :: head('Cash Transaction')}"></head>
+
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<main>
+
+    <form th:action="@{/portfolio-transactions/{id}/cashtransactions(id=${portfolio.getId()})}"
+          th:object="${cashTransactionForm}"
+          method="post">
+
+        <div>
+            <label for="transactionType">Choose Type</label>
+            <select id="transactionType" th:field="*{transactionType}">
+                <option
+                        th:each="trtype: ${transactionType}"
+                        th:text="${trtype}"
+                        th:value="${trtype}"
+                >
+                </option>
+            </select>
+        </div>
+
+        <div>
+            <label for="cashAmount">Amount in DKK</label>
+            <input id="cashAmount" type="text" th:field="*{cashAmount}">
+        </div>
+
+
+        <div>
+            <label for="dateTime">Date</label>
+            <input id="dateTime" type="datetime-local" th:field="*{dateTime}">
+        </div>
+
+
+        <button type="submit">Save transaction</button>
+
+        <div th:if="${#fields.hasErrors('cashAmount')}" th:errors="*{cashAmount}"></div>
+        <div th:if="${#fields.hasErrors('transactionType')}" th:errors="*{transactionType}"></div>
+        <div th:if="${#fields.hasErrors('dateTime')}" th:errors="*{dateTime}"></div>
+
+    </form>
+
+
+</main>
+</body>
+</html>
