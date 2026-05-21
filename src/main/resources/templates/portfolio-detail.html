@@ -9,11 +9,10 @@
     <div>
         <div sec:authorize="isAuthenticated()">
             <h2>
-                Transaction page for:
+                Portfolio holdings for:
                 <span th:text="${portfolio.name}"></span>
             </h2>
-            <br>
-            <h4>Portfolio Holdings:</h4>
+
             <table class="table table-striped">
                 <thead>
                 <tr>
@@ -34,35 +33,6 @@
                 </tbody>
 
             </table>
-
-
-<!--            <div class="bg-secondary em h5 d-flex justify-content-between text-white">-->
-<!--                <div>-->
-<!--                    <span>Purchase price of stocks and funds: </span>-->
-<!--                    <span th:text="${portfolio.getTransactionValue(6.45)}"></span>-->
-<!--                </div>-->
-
-
-<!--                <div>-->
-<!--                    <span>Cash funds: </span>-->
-<!--                    <span th:text="${portfolio.getCashValue()}"></span>-->
-<!--                </div>-->
-
-
-<!--                <div>-->
-<!--                    <span>-->
-<!--                        <a th:href="@{/portfolio-transactions/{id}/transaction/new(id=${portfolio.getId()})}"-->
-<!--                           class="btn btn-primary">Stock transaction</a>-->
-<!--                    </span>-->
-<!--                    <span>-->
-<!--                        <a th:href="@{/portfolio-transactions/{id}/transaction/cash(id=${portfolio.getId()})}"-->
-<!--                           class="btn btn-primary">Cash transaction</a>-->
-<!--                    </span>-->
-<!--                </div>-->
-
-
-<!--            </div>-->
-
 
         </div>
     </div>

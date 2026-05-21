@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
@@ -83,4 +84,78 @@ public class PortfolioService {
 
         } return result;
     }
+
+    public BigDecimal getTransactionValue(Portfolio portfolio, double conversionRateDollarKroner) {
+        BigDecimal dollarValue = BigDecimal.ZERO;
+        BigDecimal kronerValue = BigDecimal.ZERO;
+        BigDecimal cashValue = BigDecimal.ZERO;
+
+        for (Transaction tr : portfolio.getTransactions()) {
+            if (tr.getTransactionType().equals(TransactionType.BUY)) {
+                if (tr.getCurrency().equals("DKK")) {
+                    kronerValue = kronerValue.add(tr.getSum());
+                } else {
+                    dollarValue = dollarValue.add(tr.getSum());
+
+                }
+            }
+
+            if (tr.getTransactionType().equals(TransactionType.SELL)) {
+                if (tr.getCurrency().equals("DKK")) {
+                    kronerValue = kronerValue.subtract(tr.getSum());
+                } else {
+                    dollarValue = dollarValue.subtract(tr.getSum());
+                }
+            }
+
+            if (tr.getTransactionType().equals((TransactionType.DEPOSIT))) {
+                if (tr.getCurrency().equals("DKK")) {
+                    cashValue = cashValue.add(tr.getCashAmount());
+                } else {
+                    cashValue = cashValue.add(tr.getCashAmount().multiply(BigDecimal.valueOf(conversionRateDollarKroner)));
+                }
+            }
+
+            if (tr.getTransactionType().equals((TransactionType.WITHDRAW))) {
+                if (tr.getCurrency().equals("DKK")) {
+                    cashValue = cashValue.subtract(tr.getCashAmount());
+                } else {
+                    cashValue = cashValue.subtract(tr.getCashAmount().multiply(BigDecimal.valueOf(conversionRateDollarKroner)));
+                }
+            }
+        }
+        kronerValue = kronerValue.add(dollarValue.multiply(BigDecimal.valueOf(conversionRateDollarKroner)));
+        return kronerValue.setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal getCashValue(Portfolio portfolio, double conversionRateDollarKroner) {
+        BigDecimal cashValue = BigDecimal.ZERO;
+
+        for (Transaction tr : portfolio.getTransactions()) {
+            if (tr.getTransactionType().equals(TransactionType.BUY)) {
+                if (tr.getCurrency().equals("DKK")) {
+                    cashValue = cashValue.subtract(tr.getSum());
+                } else {
+                    cashValue = cashValue.subtract(tr.getSum().multiply(BigDecimal.valueOf(conversionRateDollarKroner)));
+                }
+            }
+            if (tr.getTransactionType().equals(TransactionType.SELL)) {
+                if (tr.getCurrency().equals("DKK")) {
+                    cashValue = cashValue.add(tr.getSum());
+                } else {
+                    cashValue = cashValue.add(tr.getSum().multiply(BigDecimal.valueOf(conversionRateDollarKroner)));
+                }
+            }
+
+            if (tr.getTransactionType().equals((TransactionType.DEPOSIT))) {
+                cashValue = cashValue.add(tr.getCashAmount());
+            }
+
+            if (tr.getTransactionType().equals((TransactionType.WITHDRAW))) {
+                cashValue = cashValue.subtract(tr.getCashAmount());
+            }
+        }
+        return cashValue.setScale(2, RoundingMode.HALF_UP);
+    }
+
 }

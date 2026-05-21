@@ -45,16 +45,16 @@
             </table>
 
 
-            <div class="bg-secondary em h5 d-flex justify-content-between text-white">
+            <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
                 <div>
                     <span>Purchase price of stocks and funds: </span>
-                    <span th:text="${portfolio.getTransactionValue(6.45)}"></span>
+                    <span th:text="${#numbers.formatDecimal(stockValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
                 </div>
 
 
                 <div>
                     <span>Cash funds: </span>
-                    <span th:text="${portfolio.getCashValue()}"></span>
+                    <span th:text="${#numbers.formatDecimal(cashValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}" ></span>
                 </div>
 
 

@@ -15,11 +15,14 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import java.math.BigDecimal;
+
 @Controller
 public class PortfolioController {
 
     PortfolioService portfolioService;
     TransactionService transactionService;
+    double usdToDkk = 6.45;
 
 
     public PortfolioController(PortfolioService portfolioService, TransactionService transactionService) {
@@ -41,6 +44,8 @@ public class PortfolioController {
 
         model.addAttribute("portfolio", portfolio);
         model.addAttribute("transactions", transactionService.findTransactionsForPortfolio(portfolio));
+        model.addAttribute("cashValue", portfolioService.getCashValue(portfolio, usdToDkk));
+        model.addAttribute("stockValue", portfolioService.getTransactionValue(portfolio, usdToDkk));
         return "transaction-detail";
     }
 
@@ -52,6 +57,9 @@ public class PortfolioController {
 
         model.addAttribute("portfolio", portfolio);
         model.addAttribute("overview", portfolioService.getHoldingOverview(portfolio));
+        model.addAttribute("cashValue", portfolioService.getCashValue(portfolio, usdToDkk));
+        model.addAttribute("stockValue", portfolioService.getTransactionValue(portfolio, usdToDkk));
+
         return "portfolio-detail";
     }
 
