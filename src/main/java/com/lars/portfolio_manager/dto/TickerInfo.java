@@ -1,5 +1,6 @@
 package com.lars.portfolio_manager.dto;
 
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public record TickerInfo(
@@ -14,7 +15,7 @@ public record TickerInfo(
         @JsonProperty("Currency")
         String currency,
         @JsonProperty("Type")
-        String type,
+        String instrumentType,
         @JsonProperty("Isin")
         String isin) {
 }

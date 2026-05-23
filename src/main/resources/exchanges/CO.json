@@ -1,6 +1,6 @@
 [
   {
-    "Code": null,
+    "Code": "DK0060949881.EUFUND",
     "Name": "Nordea Invest Global Enhanced KL 1",
     "Country": "Denmark",
     "Exchange": "CO",
@@ -9,7 +9,7 @@
     "Isin": "DK0060949881"
   },
   {
-    "Code": null,
+    "Code": "NDIEMMAENKL1.CO",
     "Name": "Nordea Invest Emerging Markets Enhanced KL 1",
     "Country": "Denmark",
     "Exchange": "CO",
@@ -18,8 +18,8 @@
     "Isin": "DK0060950111"
   },
   {
-    "Code": "Nordea Invest Europe Enhanced KL 1",
-    "Name": "Accunia European CLO Opportunity KL",
+    "Code": "NDIEUENHKL1.CO",
+    "Name": "Nordea Invest Europe Enhanced KL 1",
     "Country": "Denmark",
     "Exchange": "CO",
     "Currency": "DKK",

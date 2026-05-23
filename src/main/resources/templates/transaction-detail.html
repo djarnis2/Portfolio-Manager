@@ -21,7 +21,7 @@
                     <th>Amount</th>
                     <th>Price</th>
                     <th>Sum</th>
-                    <th>Cash</th>
+                    <th>Cash (DKK)</th>
                     <th>Time</th>
                 </tr>
                 </thead>
@@ -32,7 +32,7 @@
                     <td th:text="${tr.companyName}"></td>
                     <td th:text="${tr.amount}"></td>
                     <td th:text="${tr.price}"></td>
-                    <td th:classappend="text-success" th:text="${tr.sum}"></td>
+                    <td th:classappend="text-success" th:text="${tr.sum != null ? tr.currency + ' ' + tr.sum : ''}"></td>
                     <td th:if="${tr.transactionType != null}"
                         th:classappend="${tr.transactionType.name() == 'DEPOSIT'} ? 'text-success' :
                     (${tr.transactionType.name() == 'WITHDRAW'} ? 'text-danger' : '')"
@@ -43,36 +43,16 @@
                 </tbody>
 
             </table>
-
-
-            <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
-                <div>
-                    <span>Purchase price of stocks and funds: </span>
-                    <span th:text="${#numbers.formatDecimal(stockValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
-                </div>
-
-
-                <div>
-                    <span>Cash funds: </span>
-                    <span th:text="${#numbers.formatDecimal(cashValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}" ></span>
-                </div>
-
-
-                <div>
+            <div>
                     <span>
                         <a th:href="@{/portfolio-transactions/{id}/transaction/new(id=${portfolio.getId()})}"
                            class="btn btn-primary">Stock transaction</a>
                     </span>
-                    <span>
+                <span>
                         <a th:href="@{/portfolio-transactions/{id}/transaction/cash(id=${portfolio.getId()})}"
                            class="btn btn-primary">Cash transaction</a>
                     </span>
-                </div>
-
-
             </div>
-
-
         </div>
     </div>
 </main>

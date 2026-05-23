@@ -15,6 +15,9 @@ public class Transaction {
     @ManyToOne
     @JoinColumn(name = "portfolio_id")
     private Portfolio portfolio;
+    @ManyToOne
+    @JoinColumn(name = "instrument_id")
+    private Instrument instrument;
     private String companyName;
     private String ticker;
     private int amount;
@@ -32,6 +35,7 @@ public class Transaction {
     }
 
     public Transaction(Portfolio portfolio,
+                       Instrument instrument,
                        String companyName,
                        String ticker,
                        int amount,
@@ -42,6 +46,7 @@ public class Transaction {
                        LocalDateTime dateTime
     ) {
         this.portfolio = portfolio;
+        this.instrument = instrument;
         this.companyName = companyName;
         this.ticker = ticker;
         this.amount = amount;

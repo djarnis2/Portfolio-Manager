@@ -3,6 +3,7 @@ package com.lars.portfolio_manager.controllers;
 import com.lars.portfolio_manager.dto.CashTransactionForm;
 import com.lars.portfolio_manager.dto.TransactionForm;
 import com.lars.portfolio_manager.entities.*;
+import com.lars.portfolio_manager.services.InstrumentService;
 import com.lars.portfolio_manager.services.PortfolioService;
 import com.lars.portfolio_manager.services.TickerInfoService;
 import com.lars.portfolio_manager.services.TransactionService;
@@ -21,17 +22,18 @@ public class TransactionController {
     TransactionService transactionService;
     PortfolioService portfolioService;
     TickerInfoService tickerInfoService;
+    InstrumentService instrumentService;
 
-    public TransactionController(PortfolioService portfolioService, TransactionService transactionService, TickerInfoService tickerInfoService) {
+    public TransactionController(
+            PortfolioService portfolioService,
+            TransactionService transactionService,
+            TickerInfoService tickerInfoService,
+            InstrumentService instrumentService) {
         this.portfolioService = portfolioService;
         this.transactionService = transactionService;
         this.tickerInfoService = tickerInfoService;
+        this.instrumentService = instrumentService;
     }
-
-//    @GetMapping("/api/exchange/tickers")
-//    public TickerInfo getTickers(@RequestBody TickerInfo tickerInfo) {
-//        return
-//    }
 
 
     @GetMapping("/portfolio-transactions/{portfolioId}/transaction/new")
@@ -42,6 +44,7 @@ public class TransactionController {
                                      @RequestParam(required = false) String exchange,
                                      @RequestParam(required = false) String name,
                                      @RequestParam(required = false) String currency,
+                                     @RequestParam(required = false) String instrumentType,
                                      Model model) {
         Portfolio portfolio = portfolioService.findByIdAndOwner(portfolioId, currentUser);
         model.addAttribute("portfolio", portfolio);
@@ -52,8 +55,9 @@ public class TransactionController {
                 isin,
                 name,
                 exchange,
-                currency
-        ));
+                currency,
+                instrumentType)
+        );
 
         return "transaction-form";
     }
@@ -107,8 +111,12 @@ public class TransactionController {
         if (bindingResult.hasErrors()) {
             model.addAttribute(portfolio);
             model.addAttribute(form);
+            model.addAttribute("exchanges", Exchange.values());
             return "/transaction-form";
         }
+
+        Instrument instrument = instrumentService.findOrCreate(
+                form.isin(), form.name(), form.code(), form.currency(), form.instrumentType());
 
         transactionService.createTransaction(portfolio, form);
         return "redirect:/portfolio-transactions/" + portfolioId;

@@ -1,5 +1,7 @@
 package com.lars.portfolio_manager.dto;
 
+import com.lars.portfolio_manager.entities.Instrument;
+import com.lars.portfolio_manager.entities.TransactionType;
 import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -14,9 +16,10 @@ public record TransactionForm(
         String name,
         String exchange,
         String currency,
+        String instrumentType,
 
-        @NotBlank(message = "Type is required")
-        String type,
+        @NotNull(message = "Type is required")
+        TransactionType transactionType,
 
         @Min(value = 1, message = "Amount must be at least 1")
         int amount,
@@ -29,21 +32,23 @@ public record TransactionForm(
         LocalDateTime dateTime
 ) {
     public static TransactionForm empty() {
-        return fromTickerInfo(null, null, null, null, null);
+        return fromTickerInfo(null, null, null, null, null, null);
     }
 
     public static TransactionForm fromTickerInfo(String code,
                                                  String isin,
                                                  String name,
                                                  String exchange,
-                                                 String currency) {
+                                                 String currency,
+                                                 String instrumentType) {
         return new TransactionForm(
                 code != null ? code : "",
                 isin != null ? isin : "",
                 name != null ? name : "",
                 exchange != null ? exchange : "",
                 currency != null ? currency : "",
-                "BUY",
+                instrumentType != null ? instrumentType : "",
+                TransactionType.BUY,
                 1,
                 null,
                 LocalDateTime.now()

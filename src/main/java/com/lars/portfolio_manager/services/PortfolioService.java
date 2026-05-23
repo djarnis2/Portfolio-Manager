@@ -57,6 +57,7 @@ public class PortfolioService {
         List<StockHolding> result = new ArrayList<>();
         for (Map.Entry<String, List<Transaction>> entry : isinHoldings.entrySet()) {
             String isin = entry.getKey();
+            String currency = "";
             String ticker = "";
             String companyName = "";
             List<Transaction> transactions = entry.getValue();
@@ -64,6 +65,7 @@ public class PortfolioService {
             BigDecimal averagePrice = BigDecimal.ZERO;
             BigDecimal totalCost = BigDecimal.ZERO;
             for (Transaction tr : transactions) {
+                currency = tr.getCurrency();
                 if (tr.getTransactionType().equals(TransactionType.BUY)) {
                     totalAmount += tr.getAmount();
                     totalCost = totalCost.add(tr.getPrice().multiply(BigDecimal.valueOf(tr.getAmount())));
@@ -80,7 +82,7 @@ public class PortfolioService {
 
             } else averagePrice = BigDecimal.ZERO;
 
-            result.add(new StockHolding(companyName, ticker, isin, totalAmount, totalCost, averagePrice));
+            result.add(new StockHolding(companyName, ticker, isin, currency, totalAmount, totalCost, averagePrice));
 
         } return result;
     }

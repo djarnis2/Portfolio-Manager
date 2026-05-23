@@ -27,13 +27,25 @@
                 <tr th:each="stock : ${overview}">
                     <td th:text="${stock.companyName()}"></td>
                     <td th:text="${stock.totalAmount()}"></td>
-                    <td th:text="${stock.averagePrice()}"></td>
-                    <td th:text="${stock.totalCost()}"></td>
+                    <td th:text="${stock.currency() + ' ' + stock.averagePrice()}"></td>
+                    <td th:text="${stock.currency() + ' ' + stock.totalCost()}"></td>
                 </tr>
                 </tbody>
 
             </table>
+            <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
+                <div>
+                    <span>Purchase price of stocks and funds: </span>
+                    <span th:text="${#numbers.formatDecimal(stockValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
+                </div>
 
+
+                <div>
+                    <span>Cash funds: </span>
+                    <span th:text="${#numbers.formatDecimal(cashValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
+                </div>
+
+            </div>
         </div>
     </div>
 </main>

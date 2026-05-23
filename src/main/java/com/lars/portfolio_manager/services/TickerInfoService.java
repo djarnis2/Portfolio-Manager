@@ -4,8 +4,8 @@ import com.lars.portfolio_manager.dto.TickerInfo;
 import com.lars.portfolio_manager.entities.Exchange;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import tools.jackson.core.type.TypeReference;
-import tools.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.util.List;
@@ -14,11 +14,10 @@ import java.util.List;
 
 @Service
 public class TickerInfoService {
-    private final ObjectMapper objectMapper;
 
-    public TickerInfoService(ObjectMapper objectMapper) {
-        this.objectMapper = objectMapper;
-    }
+    private final ObjectMapper objectMapper = new ObjectMapper();
+
+
 
     public List<TickerInfo> loadExchange(Exchange exchange) {
         try {

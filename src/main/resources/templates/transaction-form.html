@@ -36,7 +36,8 @@
                 isin=${ticker.isin()},
                 exchange=${ticker.exchange()},
                 name=${ticker.name},
-                currency=${ticker.currency()}
+                currency=${ticker.currency()},
+                instrumentType=${ticker.instrumentType}
                 )}">
                     Select
                 </a>
@@ -76,12 +77,15 @@
                 <input type="hidden" th:field="*{currency}">
             </div>
             <div>
+                <input type="hidden" th:field="*{instrumentType}">
+            </div>
+            <div>
                 <label for="dateTime">Date</label>
                 <input id="dateTime" type="datetime-local" th:field="*{dateTime}">
             </div>
             <div>
-                <label for="type">Type</label>
-                <input id="type" type="text" th:field="*{type}">
+                <label for="transactionType">Type</label>
+                <input id="transactionType" type="text" th:field="*{transactionType}">
             </div>
 
             <button type="submit">Save transaction</button>

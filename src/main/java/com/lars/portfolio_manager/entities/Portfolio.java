@@ -2,7 +2,6 @@ package com.lars.portfolio_manager.entities;
 
 import jakarta.persistence.*;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
