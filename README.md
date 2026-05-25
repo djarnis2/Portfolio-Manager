@@ -1,6 +1,13 @@
 # Portfolio Manager
 
 Portfolio Manager is a Spring Boot application for managing investment portfolios, transactions, and calculating gains/losses based on updated stock prices.
+It is made for Danish and American stocks, with offline lists available for both markets.
+
+A default user is created for testing:
+```text
+Username: user
+Password: ourpassword
+```
 
 ## Requirements
 
