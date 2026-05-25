@@ -1,14 +1,9 @@
 package com.lars.portfolio_manager.services;
 
-import com.lars.portfolio_manager.dto.StockCall;
 import com.lars.portfolio_manager.dto.StockCallResponse;
-import com.lars.portfolio_manager.dto.TickerInfo;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
-
-import java.util.List;
 
 @Service
 public class StockApiClient {
@@ -26,7 +21,7 @@ public class StockApiClient {
     public StockCallResponse getStockInfo(String symbol) {
         return restClient.get()
                 .uri(uriBuilder -> uriBuilder
-                        .path("eod")
+                        .path("/eod")
                         .queryParam("symbols", symbol)
                         .queryParam("access_key", token)
                         .build())

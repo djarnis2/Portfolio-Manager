@@ -115,8 +115,6 @@ public class TransactionController {
             return "/transaction-form";
         }
 
-        Instrument instrument = instrumentService.findOrCreate(
-                form.isin(), form.name(), form.code(), form.currency(), form.instrumentType());
 
         transactionService.createTransaction(portfolio, form);
         return "redirect:/portfolio-transactions/" + portfolioId;

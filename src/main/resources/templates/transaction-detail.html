@@ -38,7 +38,7 @@
                     (${tr.transactionType.name() == 'WITHDRAW'} ? 'text-danger' : '')"
                         th:text="${tr.cashAmount}">
                     </td>
-                    <td th:text="${tr.dateTime}"></td>
+                    <td th:text="${#temporals.format(tr.dateTime, 'yyyy-MM-dd HH:mm')}"></td>
                 </tr>
                 </tbody>
 

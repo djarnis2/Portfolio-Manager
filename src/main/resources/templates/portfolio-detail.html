@@ -18,34 +18,62 @@
                 <tr>
                     <th>Name</th>
                     <th>Amount</th>
-                    <th>Average Price</th>
-                    <th>Total Cost</th>
+                    <th>Average purchase price</th>
+                    <th>Total purchase cost</th>
+                    <th>Latest updated price</th>
+                    <th>Last updated</th>
+                    <th>Valuation</th>
+                    <th>Change</th>
                 </tr>
                 </thead>
 
                 <tbody>
                 <tr th:each="stock : ${overview}">
-                    <td th:text="${stock.companyName()}"></td>
-                    <td th:text="${stock.totalAmount()}"></td>
-                    <td th:text="${stock.currency() + ' ' + stock.averagePrice()}"></td>
-                    <td th:text="${stock.currency() + ' ' + stock.totalCost()}"></td>
+                    <td th:text="${stock.holding().companyName()}"></td>
+                    <td th:text="${stock.holding().totalAmount()}"></td>
+                    <td th:text="${stock.holding().currency() + ' ' + stock.holding().averageCostPrice()}"></td>
+                    <td th:text="${stock.holding().currency() + ' ' + stock.holding().totalCost()}"></td>
+                    <td th:text="${stock.latestPrice() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.latestPrice(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
+                    <td th:text="${stock.fetchedAt() != null ? #temporals.format(stock.fetchedAt(), 'yyyy-MM-dd HH:mm'): '-'}"></td>
+                    <td th:text="${stock.valuation() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.valuation(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
+                    <td th:classappend="${(stock.valuation() - stock.holding.totalCost() >= 0) ? 'text-success' : 'text-danger'}"
+                        th:text="${stock.valuation() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.valuation() - stock.holding.totalCost(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
                 </tr>
                 </tbody>
 
             </table>
             <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
-                <div>
-                    <span>Purchase price of stocks and funds: </span>
-                    <span th:text="${#numbers.formatDecimal(stockValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
-                </div>
 
+                <span>Total purchase price : </span>
+                <span th:text="${#numbers.formatDecimal(stockPurchasePrice, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
 
-                <div>
-                    <span>Cash funds: </span>
-                    <span th:text="${#numbers.formatDecimal(cashValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
-                </div>
 
             </div>
+
+            <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
+
+                <span>Current total value: </span>
+                <span th:classappend="${(currentValue - stockPurchasePrice >= 0) ? 'text-success' : 'text-danger'}"
+                      th:text="${#numbers.formatDecimal(currentValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
+
+
+            </div>
+
+            <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
+
+                <span>Current cash funds: </span>
+                <span th:text="${#numbers.formatDecimal(cashValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
+
+
+            </div>
+
+            <form th:action="@{/portfolio-detail/{id}/update-prices(id=${portfolio.getId()})}" method="post">
+                <button class="btn btn-primary" type="submit">
+                    Update latest prices
+                </button>
+            </form>
+            <div th:if="${successMessage}" class="alert alert-success" th:text="${successMessage}"></div>
+            <div th:if="${errorMessage}" class="alert alert-danger" th:text="${errorMessage}"></div>
         </div>
     </div>
 </main>

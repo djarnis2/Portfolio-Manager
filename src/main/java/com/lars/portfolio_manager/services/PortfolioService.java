@@ -1,18 +1,18 @@
 package com.lars.portfolio_manager.services;
 
+import com.lars.portfolio_manager.dto.StockCallResponse;
 import com.lars.portfolio_manager.dto.StockHolding;
-import com.lars.portfolio_manager.entities.CustomUser;
-import com.lars.portfolio_manager.entities.Portfolio;
-import com.lars.portfolio_manager.entities.Transaction;
-import com.lars.portfolio_manager.entities.TransactionType;
+import com.lars.portfolio_manager.dto.ValuatedStockHolding;
+import com.lars.portfolio_manager.entities.*;
+import com.lars.portfolio_manager.repositories.InstrumentRepository;
 import com.lars.portfolio_manager.repositories.PortfolioRepository;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.math.BigDecimal;
-import java.math.MathContext;
 import java.math.RoundingMode;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -20,10 +20,16 @@ import java.util.stream.Collectors;
 
 @Service
 public class PortfolioService {
+    private final InstrumentService instrumentService;
     private PortfolioRepository portfolioRepository;
+    private StockApiClient stockApiClient;
+    private InstrumentRepository instrumentRepository;
 
-    public PortfolioService(PortfolioRepository portfolioRepository) {
+    public PortfolioService(PortfolioRepository portfolioRepository, StockApiClient stockApiClient, InstrumentService instrumentService, InstrumentRepository instrumentRepository) {
         this.portfolioRepository = portfolioRepository;
+        this.stockApiClient = stockApiClient;
+        this.instrumentService = instrumentService;
+        this.instrumentRepository = instrumentRepository;
     }
 
     public Portfolio createPortfolio(String name, CustomUser owner) {
@@ -62,7 +68,7 @@ public class PortfolioService {
             String companyName = "";
             List<Transaction> transactions = entry.getValue();
             int totalAmount = 0;
-            BigDecimal averagePrice = BigDecimal.ZERO;
+            BigDecimal averageCostPrice = BigDecimal.ZERO;
             BigDecimal totalCost = BigDecimal.ZERO;
             for (Transaction tr : transactions) {
                 currency = tr.getCurrency();
@@ -78,13 +84,38 @@ public class PortfolioService {
                 companyName = tr.getCompanyName();
             }
             if (totalAmount > 0) {
-                averagePrice = averagePrice.add(totalCost.divide(BigDecimal.valueOf(totalAmount),2, RoundingMode.HALF_UP));
+                averageCostPrice = averageCostPrice.add(totalCost.divide(BigDecimal.valueOf(totalAmount), 2, RoundingMode.HALF_UP));
 
-            } else averagePrice = BigDecimal.ZERO;
+            } else averageCostPrice = BigDecimal.ZERO;
 
-            result.add(new StockHolding(companyName, ticker, isin, currency, totalAmount, totalCost, averagePrice));
+            result.add(new StockHolding(companyName, ticker, isin, currency, totalAmount, totalCost, averageCostPrice));
 
-        } return result;
+        }
+        return result;
+    }
+
+    public List<ValuatedStockHolding> getValuatedHoldingOverview(Portfolio portfolio) {
+        return getHoldingOverview(portfolio).stream()
+                .map(holding -> {
+                    Instrument instrument = instrumentService.findByIsin(holding.isin());
+                    BigDecimal latestPrice = instrument.getLatestPrice();
+                    LocalDateTime fetchedAT = instrument.getFetchedAt();
+
+                    BigDecimal valuation = null;
+
+                    if (latestPrice != null) {
+                        valuation = latestPrice.multiply(BigDecimal.valueOf(holding.totalAmount()));
+                    }
+
+                    return new ValuatedStockHolding(
+                            holding,
+                            latestPrice,
+                            fetchedAT,
+                            valuation
+                    );
+                })
+                .toList();
+
     }
 
     public BigDecimal getTransactionValue(Portfolio portfolio, double conversionRateDollarKroner) {
@@ -158,6 +189,76 @@ public class PortfolioService {
             }
         }
         return cashValue.setScale(2, RoundingMode.HALF_UP);
+    }
+
+    public BigDecimal getCurrentHoldingsValueInKroner(Portfolio portfolio, double conversionReateDollarKroner) {
+        BigDecimal dollarValue = BigDecimal.ZERO;
+        BigDecimal kronerValue = BigDecimal.ZERO;
+        for (Transaction transaction : portfolio.getTransactions()) {
+            if (transaction.getTransactionType().equals(TransactionType.SELL) || transaction.getTransactionType().equals(TransactionType.BUY)) {
+                Instrument instrument = transaction.getInstrument();
+                System.out.println("Instrumen: " + instrument);
+                String currency = instrument.getCurrency();
+                BigDecimal latestPrice = instrument.getLatestPrice();
+                BigDecimal amount = BigDecimal.valueOf(transaction.getAmount());
+                BigDecimal currentValue = latestPrice.multiply(amount);
+
+                if (currency.equalsIgnoreCase("DKK")) {
+                    kronerValue = kronerValue.add(currentValue);
+                }
+                if (currency.equalsIgnoreCase("USD")) {
+                    dollarValue = dollarValue.add(currentValue);
+                }
+            }
+
+        }
+
+        return kronerValue.add(dollarValue.multiply(BigDecimal.valueOf(conversionReateDollarKroner)));
+
+
+    }
+
+    public int updateLatestPrices(Portfolio portfolio) {
+
+        int updatedQuotes = 0;
+        List<Instrument> instruments = portfolio.getTransactions().stream()
+                .filter(tr -> tr.getInstrument() != null)
+                .map(tr -> tr.getInstrument())
+                .distinct()
+                .toList();
+
+        System.out.println("Instruments found: " + instruments.size());
+
+        for (Instrument instrument : instruments) {
+            String symbol = instrument.getSymbol();
+
+            System.out.println("Updating instrument: " + instrument.getName()
+                    + ", symbol=" + symbol);
+
+            StockCallResponse response = stockApiClient.getStockInfo((symbol));
+
+            System.out.println("Response: " + response);
+
+
+            if (response == null || response.data() == null || response.data().isEmpty()) {
+                continue;
+            }
+
+            BigDecimal updatedStockPrice = response.data().get(0).close();
+
+            System.out.println("Latest price: " + updatedStockPrice);
+
+
+            if (updatedStockPrice != null) {
+                updatedQuotes += 1;
+                instrument.updateLatestPrice(updatedStockPrice);
+                instrumentRepository.save(instrument);
+
+                System.out.println("Saved latest price for " + symbol);
+
+            }
+        }
+        return updatedQuotes;
     }
 
 }

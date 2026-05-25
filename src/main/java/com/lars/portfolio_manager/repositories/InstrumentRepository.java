@@ -11,4 +11,5 @@ public interface InstrumentRepository extends JpaRepository<Instrument, Long> {
     Optional<Instrument> findByIsin(String isin);
 
     boolean existsByIsin(String isin);
+
 }

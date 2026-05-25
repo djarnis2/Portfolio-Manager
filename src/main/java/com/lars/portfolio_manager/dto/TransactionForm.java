@@ -51,7 +51,7 @@ public record TransactionForm(
                 TransactionType.BUY,
                 1,
                 null,
-                LocalDateTime.now()
+                LocalDateTime.now().withSecond(0).withNano(0)
         );
     }
 }

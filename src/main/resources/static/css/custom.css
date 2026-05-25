@@ -2,6 +2,11 @@
     --app-primary: #2f855a;
     --app-primary-hover: #276749;
     --app-primary-active: #22543d;
+
+    --app-secondary: #e2e8f0;
+    --app-secondary-hover: #cbd5e0;
+    --app-secondary-active: #a0aec0;
+    --app-secondary-text: #1a202c;
 }
 
 .btn-primary {
@@ -16,4 +21,27 @@
 
     --bs-btn-disabled-bg: var(--app-primary);
     --bs-btn-disabled-border-color: var(--app-primary);
+}
+
+.bg-secondary {
+    background-color: var(--app-secondary) !important;
+    color: var(--app-secondary-text) !important;
+}
+
+.btn-secondary {
+    --bs-btn-bg: var(--app-secondary);
+    --bs-btn-border-color: var(--app-secondary);
+    --bs-btn-color: var(--app-secondary-text);
+
+    --bs-btn-hover-bg: var(--app-secondary-hover);
+    --bs-btn-hover-border-color: var(--app-secondary-hover);
+    --bs-btn-hover-color: var(--app-secondary-text);
+
+    --bs-btn-active-bg: var(--app-secondary-active);
+    --bs-btn-active-border-color: var(--app-secondary-active);
+    --bs-btn-active-color: var(--app-secondary-text);
+
+    --bs-btn-disabled-bg: var(--app-secondary);
+    --bs-btn-disabled-border-color: var(--app-secondary);
+    --bs-btn-disabled-color: var(--app-secondary-text);
 }

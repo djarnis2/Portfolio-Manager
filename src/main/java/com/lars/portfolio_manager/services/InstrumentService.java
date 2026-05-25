@@ -2,7 +2,10 @@ package com.lars.portfolio_manager.services;
 
 import com.lars.portfolio_manager.entities.Instrument;
 import com.lars.portfolio_manager.repositories.InstrumentRepository;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 public class InstrumentService {
@@ -17,5 +20,10 @@ public class InstrumentService {
                 .orElseGet(() -> instrumentRepository.save(
                         new Instrument(isin, name, symbol, currency, instrumentType)
                 ));
+    }
+
+
+    public Instrument findByIsin(String isin) {
+        return instrumentRepository.findByIsin(isin).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 }

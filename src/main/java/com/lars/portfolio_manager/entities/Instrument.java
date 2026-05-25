@@ -37,6 +37,11 @@ public class Instrument {
         this.instrumentType = instrumentType;
     }
 
+    public void updateLatestPrice(BigDecimal latestPrice) {
+        this.latestPrice = latestPrice;
+        this.fetchedAt = LocalDateTime.now();
+    }
+
     public Long getId() {
         return id;
     }

@@ -124,7 +124,9 @@ public class Transaction {
         return cashAmount;
     }
 
-
+    public Instrument getInstrument() {
+        return instrument;
+    }
 
     public void setPortfolio(Portfolio portfolio) {
         this.portfolio = portfolio;

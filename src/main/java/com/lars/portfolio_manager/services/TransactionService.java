@@ -25,10 +25,11 @@ public class TransactionService {
     }
 
     public Transaction createTransaction(Portfolio portfolio, TransactionForm form) {
+        String marketStackCode = marketStackCode(form.exchange(), form.code());
         Instrument instrument = instrumentService.findOrCreate(
                 form.isin(),
                 form.name(),
-                form.code(),
+                marketStackCode,
                 form.currency(),
                 form.instrumentType()
         );
@@ -36,7 +37,7 @@ public class TransactionService {
                 portfolio,
                 instrument,
                 form.name(),
-                form.code(),
+                marketStackCode,
                 form.amount(),
                 form.price(),
                 form.transactionType(),
@@ -57,5 +58,15 @@ public class TransactionService {
                 form.dateTime()
         );
         return transactionRepository.save(transaction);
+    }
+
+    public String marketStackCode(String exchange, String code) {
+        if (code == null || code.isBlank()) {
+            return null;
+        }
+        if ("CO".equalsIgnoreCase(exchange)) {
+            return code + ".CO";
+        }
+        return code;
     }
 }

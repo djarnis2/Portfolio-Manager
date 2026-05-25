@@ -35,9 +35,9 @@
                 code=${ticker.code()},
                 isin=${ticker.isin()},
                 exchange=${ticker.exchange()},
-                name=${ticker.name},
+                name=${ticker.name()},
                 currency=${ticker.currency()},
-                instrumentType=${ticker.instrumentType}
+                instrumentType=${ticker.instrumentType()}
                 )}">
                     Select
                 </a>
@@ -80,8 +80,12 @@
                 <input type="hidden" th:field="*{instrumentType}">
             </div>
             <div>
-                <label for="dateTime">Date</label>
-                <input id="dateTime" type="datetime-local" th:field="*{dateTime}">
+                <label for="dateTime">Date and time</label>
+                <input id="dateTime"
+                       type="datetime-local"
+                       name="dateTime"
+                       th:value="${#temporals.format(transactionForm.dateTime(), 'yyyy-MM-dd''T''HH:mm')}"
+                       required>
             </div>
             <div>
                 <label for="transactionType">Type</label>
