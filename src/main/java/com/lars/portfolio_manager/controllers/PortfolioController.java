@@ -105,7 +105,7 @@ public class PortfolioController {
             int updated = portfolioService.updateLatestPrices(portfolio);
             redirectAttributes.addFlashAttribute(
                     "successMessage",
-                    "Updated prices for " + updated + " intruments"
+                    "Updated prices for " + updated + " instrument(s)"
             );
         } catch (Exception e) {
             redirectAttributes.addFlashAttribute(

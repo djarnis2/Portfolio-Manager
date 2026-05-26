@@ -36,8 +36,8 @@
                     <td th:text="${stock.latestPrice() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.latestPrice(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
                     <td th:text="${stock.fetchedAt() != null ? #temporals.format(stock.fetchedAt(), 'yyyy-MM-dd HH:mm'): '-'}"></td>
                     <td th:text="${stock.valuation() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.valuation(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
-                    <td th:classappend="${(stock.valuation() - stock.holding.totalCost() >= 0) ? 'text-success' : 'text-danger'}"
-                        th:text="${stock.valuation() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.valuation() - stock.holding.totalCost(), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
+                    <td th:classappend="${stock.valuation() != null ? ((stock.valuation().subtract(stock.holding().totalCost()).signum() >= 0) ? 'text-success' : 'text-danger'): ''}"
+                        th:text="${stock.valuation() != null ? stock.holding().currency() + ' ' + #numbers.formatDecimal(stock.valuation().subtract(stock.holding().totalCost()), 1, 'POINT', 2, 'COMMA'): '-'}"></td>
                 </tr>
                 </tbody>
 
@@ -53,8 +53,8 @@
             <div class="bg-secondary em h5 d-flex justify-content-between text-white align-items-center p-2">
 
                 <span>Current total value: </span>
-                <span th:classappend="${(currentValue - stockPurchasePrice >= 0) ? 'text-success' : 'text-danger'}"
-                      th:text="${#numbers.formatDecimal(currentValue, 1, 'POINT', 2, 'COMMA') + ' DKK'}"></span>
+                <span th:classappend="${currentValue != null ? ((currentValue.subtract(stockPurchasePrice).signum() >= 0) ? 'text-success' : 'text-danger'): ''}"
+                      th:text="${currentValue != null ? #numbers.formatDecimal(currentValue, 1, 'POINT', 2, 'COMMA') + ' DKK': '-'}"></span>
 
 
             </div>
@@ -68,7 +68,7 @@
             </div>
 
             <form th:action="@{/portfolio-detail/{id}/update-prices(id=${portfolio.getId()})}" method="post">
-                <button class="btn btn-primary" type="submit">
+                <button class="btn btn-primary mb-2" type="submit">
                     Update latest prices
                 </button>
             </form>

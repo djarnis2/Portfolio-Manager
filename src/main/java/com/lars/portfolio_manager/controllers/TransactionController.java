@@ -48,16 +48,24 @@ public class TransactionController {
                                      Model model) {
         Portfolio portfolio = portfolioService.findByIdAndOwner(portfolioId, currentUser);
         model.addAttribute("portfolio", portfolio);
-        model.addAttribute("transactionForm", TransactionForm.empty());
         model.addAttribute("exchanges", Exchange.values());
-        model.addAttribute("transactionForm", TransactionForm.fromTickerInfo(
-                code,
-                isin,
-                name,
-                exchange,
-                currency,
-                instrumentType)
-        );
+
+        boolean instrumentSelected = (code != null && !code.isBlank()) || (isin != null && !isin.isBlank());
+
+        if (!instrumentSelected) {
+            model.addAttribute("transactionForm", TransactionForm.empty());
+        } else {
+            model.addAttribute("transactionForm", TransactionForm.fromTickerInfo(
+                    code,
+                    isin,
+                    name,
+                    exchange,
+                    currency,
+                    instrumentType)
+            );
+            model.addAttribute("search", "Please enter amount, price, transaction type and time of purchase.");
+
+        }
 
         return "transaction-form";
     }
@@ -81,11 +89,17 @@ public class TransactionController {
                                      @AuthenticationPrincipal CustomUser currentUser,
                                      Model model) {
 
+
         Portfolio portfolio = portfolioService.findByIdAndOwner(portfolioId, currentUser);
         model.addAttribute("portfolio", portfolio);
         model.addAttribute("transactionForm", TransactionForm.empty());
         model.addAttribute("exchanges", Exchange.values());
         model.addAttribute("tickerInfo", tickerInfoService.tickerSearch(exchange, query));
+
+        if (query == null || query.isBlank()) {
+            model.addAttribute("searchError", "Please enter a ticker, name or ISIN to get a particular search result.");
+            return "transaction-form";
+        }
 
         return "transaction-form";
     }

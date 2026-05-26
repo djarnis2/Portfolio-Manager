@@ -20,7 +20,7 @@ public class Transaction {
     private Instrument instrument;
     private String companyName;
     private String ticker;
-    private int amount;
+    private Integer amount;
     private BigDecimal price;
     private String isin;
 
@@ -38,7 +38,7 @@ public class Transaction {
                        Instrument instrument,
                        String companyName,
                        String ticker,
-                       int amount,
+                       Integer amount,
                        BigDecimal price,
                        TransactionType transactionType,
                        String isin,
@@ -92,7 +92,7 @@ public class Transaction {
         return ticker;
     }
 
-    public int getAmount() {
+    public Integer getAmount() {
         return amount;
     }
 

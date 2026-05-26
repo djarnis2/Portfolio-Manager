@@ -199,16 +199,19 @@ public class PortfolioService {
                 Instrument instrument = transaction.getInstrument();
                 System.out.println("Instrumen: " + instrument);
                 String currency = instrument.getCurrency();
-                BigDecimal latestPrice = instrument.getLatestPrice();
-                BigDecimal amount = BigDecimal.valueOf(transaction.getAmount());
-                BigDecimal currentValue = latestPrice.multiply(amount);
+                if (instrument.getLatestPrice() != null) {
+                    BigDecimal latestPrice = instrument.getLatestPrice();
+                    BigDecimal amount = BigDecimal.valueOf(transaction.getAmount());
+                    BigDecimal currentValue = latestPrice.multiply(amount);
 
-                if (currency.equalsIgnoreCase("DKK")) {
-                    kronerValue = kronerValue.add(currentValue);
-                }
-                if (currency.equalsIgnoreCase("USD")) {
-                    dollarValue = dollarValue.add(currentValue);
-                }
+                    if (currency.equalsIgnoreCase("DKK")) {
+                        kronerValue = kronerValue.add(currentValue);
+                    }
+                    if (currency.equalsIgnoreCase("USD")) {
+                        dollarValue = dollarValue.add(currentValue);
+                    }
+                } else return null;
+
             }
 
         }
