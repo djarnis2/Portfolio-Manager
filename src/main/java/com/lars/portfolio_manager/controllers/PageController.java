@@ -21,8 +21,9 @@ public class PageController {
                        Model model) {
         if (currentUser != null) {
             model.addAttribute("portfolios", portfolioService.findAllByOwner(currentUser));
+            return "home";
         }
-        return "home";
+        return "login";
     }
 
 }

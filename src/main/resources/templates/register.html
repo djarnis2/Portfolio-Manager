@@ -2,38 +2,45 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="~{fragments/head :: head('Register')}"></head>
 <body>
-    <div th:replace="~{fragments/navbar :: navbar}"></div>
-    <h1>Register Page</h1>
-    <form th:action="@{/register}" th:object="${registerForm}" method="post">
-        <div>
-            <label for="username">Username</label>
-            <input type="text" th:field="*{username}">
-            <p th:if="${#fields.hasErrors('username')}"
-            th:errors="*{username}">
-            </p>
-        </div>
-        <div>
-            <label for="email">Email</label>
-            <input type="email" th:field="*{email}">
-            <p th:if="${#fields.hasErrors('email')}"
-               th:errors="*{email}">
-            </p>
-        </div>
-        <div>
-            <label for="password">Password</label>
-            <input type="password" th:field="*{password}">
-            <p th:if="${#fields.hasErrors('password')}"
-               th:errors="*{password}"
-            ></p>
-        </div>
-        <div>
-            <label for="matchingPassword">Confirm Password</label>
-            <input type="password" th:field="*{matchingPassword}">
-            <p th:if="${#fields.hasErrors('matchingPassword')}"
-               th:errors="*{matchingPassword}"
-            ></p>
-        </div>
-        <button type="submit">Register</button>
-    </form>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+
+<main class="container mb-4">
+    <div class="col-md-8 col-lg-6 mx-auto">
+        <h1 class="mb-5">Register Page</h1>
+        <form th:action="@{/register}" th:object="${registerForm}" method="post">
+            <div class="mb-2">
+                <label class="col-4" for="username">Username</label>
+                <input id="username" type="text" th:field="*{username}">
+                <p th:if="${#fields.hasErrors('username')}"
+                   th:errors="*{username}">
+                </p>
+            </div>
+            <div class="mb-2">
+                <label class="col-4" for="email">Email</label>
+                <input id="email" type="email" th:field="*{email}">
+                <p th:if="${#fields.hasErrors('email')}"
+                   th:errors="*{email}">
+                </p>
+            </div>
+            <div class="mb-2">
+                <label class="col-4" for="password">Password</label>
+                <input id="password" type="password" th:field="*{password}">
+                <p th:if="${#fields.hasErrors('password')}"
+                   th:errors="*{password}"
+                ></p>
+            </div>
+            <div class="mb-4">
+                <label class="col-4" for="matchingPassword">Confirm Password</label>
+                <input id="matchingPassword" type="password" th:field="*{matchingPassword}">
+                <p th:if="${#fields.hasErrors('matchingPassword')}"
+                   th:errors="*{matchingPassword}"
+                ></p>
+            </div>
+            <button class="btn btn-primary mb-2" type="submit">Register</button>
+        </form>
+    </div>
+</main>
+
+
 </body>
 </html>

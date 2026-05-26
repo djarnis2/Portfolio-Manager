@@ -18,3 +18,7 @@ stock:
   api:
     token: ${STOCK_API_TOKEN:}
     base-url: ${STOCK_API_BASE_URL:}
+server:
+  servlet:
+    session:
+      timeout: 2h
