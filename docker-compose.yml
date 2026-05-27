@@ -1,0 +1,34 @@
+services:
+  mysql-docker:
+    image: mysql:8
+    container_name: mysql-docker
+    env_file:
+      - .env
+    environment:
+      MYSQL_DATABASE: portfolio-manager
+    ports:
+      - "3308:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 3
+
+  app:
+    build: .
+    container_name: portfolio-manager
+    depends_on:
+      mysql-docker:
+          condition: service_healthy
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql-data:
+
+
+

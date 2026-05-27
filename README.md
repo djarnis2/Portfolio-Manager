@@ -11,19 +11,13 @@ Password: ourpassword
 
 ## Requirements
 
-- Java 17 or newer
-- Maven
-- MySQL
+- Docker Desktop
 - Marketstack API key
 
-## Database
 
-Make sure MySQL is installed and running on the default port `3306`.
-
-Create a database named:
-
-```sql
-CREATE DATABASE `portfolio-manager`;
+## Clone repo
+```
+git clone git@github.com:djarnis2/Portfolio-Manager.git
 ```
 
 ## Environment variables
@@ -31,20 +25,37 @@ CREATE DATABASE `portfolio-manager`;
 Create a `.env` file in the project root with the following variables:
 
 ```env
-STOCK_API_TOKEN=YOUR_MARKETSTACK_API_KEY
+STOCK_API_TOKEN=your_marketstack_api_key
 STOCK_API_BASE_URL=https://api.marketstack.com/v2
-SPRING_DATASOURCE_USERNAME=YOUR_MYSQL_USERNAME
-SPRING_DATASOURCE_PASSWORD=YOUR_MYSQL_PASSWORD
+SPRING_DATASOURCE_USERNAME=root
+SPRING_DATASOURCE_PASSWORD=your_mysql_password
+MYSQL_ROOT_PASSWORD=your_mysql_password
 ```
 
-## Running the application
+## Building the application
 
 From the project root, run:
-```
-./mvnw spring-boot:run
+```shell
+docker compose up --build
 ```
 
-On Windows:
+## On following launches
+
+From the project root, run:
+```shell
+docker compose up
 ```
-mvnw spring-boot:run
+## The application will run on 
 ```
+http://localhost:8080
+```
+
+## Stop the application
+````shell
+docker compose down
+````
+
+##  Delete database
+````shell
+docker compose down -v
+````
